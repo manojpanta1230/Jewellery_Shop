@@ -42,7 +42,7 @@
             <a href="wishlist.html"> <i class="fa-regular fa-heart"></i></a>
             <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
         </div>
-        <!-- <div class="togglebar" id="togglebar"><i class="fa-solid fa-bars"></i> -->
+        <div class="togglebar" id="togglebar"><i class="fa-solid fa-bars"></i>
         </div>
 
     </nav>
@@ -268,9 +268,27 @@
             </div>
         </div>
 
-        <!-- <div class="footer-copyright">
-            <hr> <p>COPYRIGHT @2024</p>
-        </div> -->
+        <script>
+            // Select the toggle button, bar, and close button
+ let toggleButton = document.getElementById('togglebar');
+ let bar = document.getElementById('bar');
+ let closeButton = document.getElementById('close');
+ 
+ // Toggle the sidebar visibility
+ toggleButton.addEventListener('click', () => {
+     if (bar.style.display === 'none' || bar.style.display === '') {
+         bar.style.display = 'flex';
+     } else {
+         bar.style.display = 'none';
+     }
+ });
+ 
+ // Close the sidebar
+ closeButton.addEventListener('click', () => {
+     bar.style.display = 'none';
+ });
+ 
+         </script>
     </footer>
 </body>
 

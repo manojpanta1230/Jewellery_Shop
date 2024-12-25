@@ -302,27 +302,27 @@
 
             
             </footer>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-    pagination: {
-        el: ".swiper-pagination",
-    },
-});
-
-let element = document.getElementById('togglebar');
-let bar = document.getElementById('bar');
-let span = document.getElementById("close");
-
-span.addEventListener('click', () => {
-    bar.classList.toggle("hide")
-});
-element.addEventListener("click", () => {
-
-
-    bar.classList.toggle("hide");
-
-});
-</script>
+            <script>
+                // Select the toggle button, bar, and close button
+     let toggleButton = document.getElementById('togglebar');
+     let bar = document.getElementById('bar');
+     let closeButton = document.getElementById('close');
+     
+     // Toggle the sidebar visibility
+     toggleButton.addEventListener('click', () => {
+         if (bar.style.display === 'none' || bar.style.display === '') {
+             bar.style.display = 'flex';
+         } else {
+             bar.style.display = 'none';
+         }
+     });
+     
+     // Close the sidebar
+     closeButton.addEventListener('click', () => {
+         bar.style.display = 'none';
+     });
+     
+             </script>
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
