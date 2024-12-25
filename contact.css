@@ -1,0 +1,318 @@
+/* Default Styling (for large screens) */
+.box {
+    height: 300px;
+    background-color: black;
+    width: 200px;
+    z-index: 1;
+}
+
+.contact-card {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 250px;
+    left: 960px;
+}
+
+.contact-card h2 {
+    font-size: 18px;
+    margin: 0 0 20px;
+    font-weight: normal;
+}
+
+.contact-card .info-section {
+    margin-bottom: 15px;
+}
+
+.contact-card .info-section h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.contact-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Icon styling */
+.contact-card i {
+    font-size: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    color: #bbb;
+}
+
+/* Social media icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #aaa;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.contact-info {
+    max-width: 300px;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.contact-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.contact-info .email,
+.contact-info .phone {
+    margin-top: 10px;
+}
+
+.contact-info span {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Form Section */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Quote Section */
+.quote-section {
+    background-color: #ffd966;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 5px;
+    color: #333;
+    position: relative;
+    top: -200px;
+    right: 50px;
+}
+
+.quote-section p {
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.quote-section span {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    text-align: right;
+}
+
+/* Newsletter Subscription Section */
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.newsletter p {
+    font-size: 16px;
+    margin-right: 20px;
+    color: #333;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-section {
+    display: flex;
+    background-color: white;
+    width: 75%;
+    justify-content: space-around;
+    position: relative;
+    top: -200px;
+}
+
+/* Responsive Styling */
+
+/* Medium Screens (tablets) */
+@media (max-width: 992px) {
+    .contact-card {
+        position: relative;
+        top: 20px;
+        left: 0;
+        width: 80%;
+        margin: 0 auto;
+        transform: translateX(0);
+    }
+
+    .quote-section {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .container-section {
+        flex-direction: column;
+        width: 90%;
+        top: 0;
+        margin: 0 auto;
+    }
+
+    .newsletter {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* Small Screens (phones) */
+@media (max-width: 600px) {
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-card {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+
+    .quote-section {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .container-section {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .newsletter p {
+        margin: 10px 0;
+    }
+
+    .newsletter input[type="email"] {
+        width: 100%;
+        margin: 10px 0;
+    }
+    footer{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .footer-text p{
+        font-size:10px;
+    }
+    .footer-logo img{
+
+    height: 100px;
+    }
+    .footer-text h2{
+    font-size: 10px ;
+    }
+    .footer-heading{
+        display: none;
+    }
+}
+@media (max-width:1200px) {
+    
+}

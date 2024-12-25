@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+</head>
+<body>
+    <div class="top-navbar">
+        <div class="icon">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+        </div>
+        <div class="logo">
+            <img src="Images/Version 2 Fairy Craft Jewellery.png" alt="" height="100px">
+        </div>
+        <p> FREE SHIPPING ALL OVER NEPAL
+        </p>
+    </div>
+    <nav>
+        <div class="dropdown">
+            <h2> Browser Categories</h2>
+        </div>
+        <ul>
+            <li style="text-decoration: underline;"><a href="index.html">HOME</li></a>
+                <li><a href="shop.html">SHOP</li></a>
+                    <li><a href="aboutus.html">ABOUT US </li></a>
+                        <li><a href="">OUR SERVICES</li></a>
+                            <li><a href="contact.html">CONTACT</li></a>
+        </ul>
+        <div class="nav-icons">
+            <a href="#"> <i class="fa-solid fa-user"></i></a>
+            <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="wishlist.html"> <i class="fa-regular fa-heart"></i></a>
+            <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <!-- <div class="togglebar" id="togglebar"><i class="fa-solid fa-bars"></i> -->
+        </div>
+
+    </nav>
+    <div class="bar" id="bar">
+        <ul>
+            <li style="text-decoration: underline;"><a>HOME</li></a>
+                <li><a>SHOP</a></li>
+                <li><a>ABOUT US </a></li>
+                <li><a>OUR SERVICES</a></li>
+                <li><a>CONTACT</a></li>
+        </ul>
+        <span id="close" style="font-size: 40px;">&times;</span>
+    </div>
+    <div class="mini-container">
+        <h1>Checkout</h1>
+        <span>
+    <a href="index.html"> Home</a>
+    <a href="checkoutpage.html"> Checkout</a>
+</span>
+    </div>
+    <!-- Main Checkout Container -->
+    <div class="checkout-container">
+        
+        <!-- Billing Details Section -->
+        <div class="billing-details">
+            <h2>BILLING DETAILS</h2>
+            <div class="form-group">
+                <div>
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" placeholder="First Name" required>
+                </div>
+                <div>
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" id="last-name" placeholder="Last Name" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div>
+                    <label for="country">Country*</label>
+                    <input type="text" id="country" value="Nepal" readonly>
+                </div>
+                <div>
+                    <label for="state">State*</label>
+                    <input type="text" id="state" placeholder="Bagmati" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div>
+                    <label for="city">Town/City*</label>
+                    <input type="text" id="city" placeholder="City" required>
+                </div>
+                <div>
+                    <label for="zip">Postcode/Zip*</label>
+                    <input type="text" id="zip" placeholder="Zip Code" required>
+                </div>
+            </div>
+
+            <label for="address">Street Address*</label>
+            <input type="text" id="address" placeholder="Street, Tole, House number" required>
+
+            <label for="phone">Phone*</label>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="Email Address" required>
+
+            <label for="special-instruction">Any Special Instruction (optional)</label>
+            <textarea id="special-instruction" placeholder="Special Instruction about the order."></textarea>
+        </div>
+
+        <!-- Order Summary Section -->
+        <div class="order-summary">
+            <h3>YOUR ORDER</h3>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Droplet Earrings</td>
+                    <td>NPR 5,050.00</td>
+                </tr>
+                <tr>
+                    <td>Droplet Earrings</td>
+                    <td>NPR 5,050.00</td>
+                </tr>
+                <tr>
+                    <td>Droplet Earrings</td>
+                    <td>NPR 5,050.00</td>
+                </tr>
+                <tr class="total-row">
+                    <td>Sub Total</td>
+                    <td>NPR 15,150.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping Address</td>
+                    <td>Maitri road, Sankhamul 15,<br>Kathmandu, Nepal</td>
+                </tr>
+                <tr>
+                    <td>Shipping Charge</td>
+                    <td>NPR 100.00</td>
+                </tr>
+                <tr class="total-row">
+                    <td>TOTAL</td>
+                    <td>NPR 15,250.00</td>
+                </tr>
+            </table>
+
+            <!-- Payment Methods -->
+            <div class="payment-methods">
+                <label><input type="radio" name="payment" value="cod"> Cash on Delivery</label>
+                <label><input type="radio" name="payment" value="esewa"> Pay with Esewa</label>
+                <label><input type="radio" name="payment" value="phonepay"> Pay with Phone Pay</label>
+            </div>
+
+            <!-- Terms and Conditions -->
+            <div class="terms">
+                <input type="checkbox" required>
+                <label>I have read and agree to the website terms and conditions*</label>
+            </div>
+
+            <!-- Place Order Button -->
+            <button class="place-order-btn">PLACE ORDER</button>
+        </div>
+    </div>
+    <div class="down-background">
+        <img src="Images/1 1.png" alt="" >
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <img src="Images/Version 2 Fairy Craft Jewellery.png" alt="" height="200px">
+        </div>
+        <div class="footer-text">
+            <h2>
+                FAIRY TRINKETS HANDICRAFTS
+            </h2>
+            <p> where Enchantment meets timeless elegance. Each exquisite piece is meticulously handcrafted to capture the ethereal beauty of the fairy realm. Welcome to the realm of Fairy Trinkets Handicrafts, Where Your Happily Ever After Begins.</p>
+        </div>
+
+        <ul>
+            <li>Ring</li>
+            <li>Earring</li>
+            <li>Necklace</li>
+            <li>Pauju</li>
+            <li>Bracelet</li>
+            <li>Special Featured</li>
+            <li>ALL</li>
+        </ul>
+
+        <div class="footer-contact">
+            <div class="info">
+                <i class="fa-solid fa-phone">
+        
+            </i>
+                <p>+977 9842491807<br> +977 9842491807<br> +977 9842491807</p>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-location-dot">
+    
+                    </i>
+                <p>New Baneshwor,<br> Kathmandu, Nepal</p>
+            </div>
+            <div class="info">
+                <i class="fa-regular fa-envelope">
+            </i>
+                <p>info@fairytrinketsnp.com.np</p>
+            </div>
+            <div class="info"><i class="fa-regular fa-globe">
+                </i>
+                <p>www.fairytrinketsnp.com.np</p>
+            </div>
+        </div>
+
+        <!-- <div class="footer-copyright">
+            <hr> COPYRIGHT @2024
+        </div> -->
+    </footer>
+
+</body>
+</html>

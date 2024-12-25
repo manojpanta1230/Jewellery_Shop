@@ -1,0 +1,7 @@
+@media (max-width:577px) {
+    .shop-container{
+        gap: 140px;
+        display: grid;
+    grid-template-columns: repeat(2, 1fr)
+    }
+}

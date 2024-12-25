@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Gold Bangles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="singleproduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .main-image {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .thumbnail-gallery {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .thumbnail-gallery img {
+            width: 70px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Product Information */
+        .product-info {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .product-title {
+            font-size: 26px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 22px;
+            color: #d9534f;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            color: #f1c40f;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .product-description {
+            margin-bottom: 20px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Options */
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .options label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .options .metal-options {
+            display: flex;
+            gap: 10px;
+        }
+
+        .metal-option {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .metal-option:hover {
+            border-color: #333;
+        }
+
+        .purity-options {
+            display: flex;
+            gap: 10px;
+            font-weight: bold;
+        }
+
+        .purity-option {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .purity-option:hover {
+            border-color: #333;
+        }
+
+        /* Add to Cart */
+        .add-to-cart {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .add-to-cart button {
+            padding: 12px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .add-to-cart button:hover {
+            background-color: #555;
+        }
+
+        /* Additional Sections */
+        .details-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            display: flex;
+        }
+
+        .details-section h2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .features-list {
+            list-style-type: none;
+            padding: 0;
+            display: inline;
+            text-decoration: underline;
+        }
+
+        .features-list li {
+            color: #555;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        /* Related Products */
+        .related-products {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .related-product {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .related-product img {
+            width: 80%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+     <div class="top-navbar">
+            <div class="icon">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+            <div class="logo">
+                <img src="Images/Version 2 Fairy Craft Jewellery.png" alt="" height="100px">
+            </div>
+            <p> FREE SHIPPING ALL OVER NEPAL
+            </p>
+        </div>
+        <nav>
+            <div class="dropdown">
+                <h2> Browser Categories</h2>
+            </div>
+            <ul>
+                <li style="text-decoration: underline;"><a>HOME</li></a>
+                    <li><a href="shop.html"> SHOP</li></a>
+                        <li><a href="aboutus.html">ABOUT US </li></a>
+                            <li><a>OUR SERVICES</li></a>
+                                <li><a href="contact.html"> CONTACT</li></a>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"> <i class="fa-solid fa-user"></i></a>
+                <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="wishlist.html"> <i class="fa-regular fa-heart"></i></a>
+                <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="togglebar" id="togglebar"><i class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+        <div class="bar" id="bar">
+            <ul>
+                <li style="text-decoration: underline;"><a>HOME</li></a>
+                    <li><a>SHOP</a></li>
+                    <li><a>ABOUT US </a></li>
+                    <li><a>OUR SERVICES</a></li>
+                    <li><a>CONTACT</a></li>
+            </ul>
+            <span id="close" style="font-size: 40px;">&times;</span>
+        </div>
+
+    <div class="container">
+        <!-- Image Gallery -->
+        <div class="image-gallery">
+            <img src="Images/Top view golden earrings arrangement.png" alt="Elegant Gold Bangles" class="main-image">
+            <div class="thumbnail-gallery">
+                <img src="Images/Rectangle 23.png" alt="Thumbnail 1">
+                <img src="Images/Model shows earrings and ring with beautiful blue precious stones.png" alt="Thumbnail 2">
+                <img src="Images/Rectangle 38.png" alt="Thumbnail 3">
+                <img src="Images/Shiny gold jewelry a symbol of wealth generated by ai.png" alt="Thumbnail 4">
+            </div>
+        </div>
+
+        <!-- Product Information -->
+        <div class="product-info">
+            <div class="breadcrumb">Home > Shop > Bangles</div>
+            <h1 class="product-title">Elegant Gold Bangles</h1>
+            <div class="product-price">20,000 NPR</div>
+            <div class="rating">★★★★★</div>
+            <p class="product-description">
+                Gold bangles are exquisite jewelry pieces crafted from precious gold, adorning wrists with timeless elegance and luxury. These gleaming accessories symbolize wealth and tradition, often embellished with intricate designs or gemstones for added allure. They remain a cherished symbol of beauty and prosperity in various cultures worldwide.
+            </p>
+
+            <!-- Options -->
+            <div class="options">
+                <label>Metal</label>
+                <div class="metal-options">
+                    <div class="metal-option">Gold</div>
+                    <div class="metal-option">Rose Gold</div>
+                    <div class="metal-option">White Gold</div>
+                </div>
+
+                <label>Purity</label>
+                <div class="purity-options">
+                    <div class="purity-option">14K</div>
+                    <div class="purity-option">18K</div>
+                    <div class="purity-option">21K</div>
+                    <div class="purity-option">22K</div>
+                </div>
+
+                <label>Quantity</label>
+                <input type="number" value="1" min="1" style="padding: 10px; width: 100px; border: 1px solid #ddd; border-radius: 4px;">
+            </div>
+
+            <!-- Add to Cart -->
+            <div class="add-to-cart">
+                <button>Add to Cart</button>
+                <button style="background-color: #eee; color: #333;">Add to Wishlist</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Information Section -->
+    <div class="details-section">
+        <div class="description-class">
+        <h2>Description</h2>
+        <p>
+            Gold bangles are exquisite jewelry pieces crafted from precious gold, adorning wrists with timeless elegance and luxury. These gleaming accessories symbolize wealth and tradition, often embellished with intricate designs or gemstones for added allure. They remain a cherished symbol of beauty and prosperity in various cultures worldwide.
+        </p>
+        <ul class="features-list">
+            <li>14 karat Gold equals 58.3% Gold - extremely popular for jewelry</li>
+            <li>100% Certified - All our products come with a Certificate of Authenticity</li>
+            <li>1-year warranty for all jewelry</li>
+            <li>Multiple payment options available</li>
+            <li>Tamper-proof packaging and insured shipping across India</li>
+            <li>Free repairs or replacements for regular wear damage</li>
+        </ul>
+        </div>
+
+        <img src="Images/Rectangle 47.png" alt="">
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <img src="Images/Version 2 Fairy Craft Jewellery.png" alt="" height="200px">
+        </div>
+        <div class="footer-text">
+            <h2>
+                FAIRY TRINKETS HANDICRAFTS
+            </h2>
+            <p> where Enchantment meets timeless elegance. Each exquisite piece is meticulously handcrafted to capture the ethereal beauty of the fairy realm. Welcome to the realm of Fairy Trinkets Handicrafts, Where Your Happily Ever After Begins.</p>
+        </div>
+
+        <ul>
+            <li>Ring</li>
+            <li>Earring</li>
+            <li>Necklace</li>
+            <li>Pauju</li>
+            <li>Bracelet</li>
+            <li>Special Featured</li>
+            <li>ALL</li>
+        </ul>
+
+        <div class="footer-contact">
+            <div class="info">
+                <i class="fa-solid fa-phone">
+        
+            </i>
+                <p>+977 9842491807<br> +977 9842491807<br> +977 9842491807</p>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-location-dot">
+    
+                    </i>
+                <p>New Baneshwor,<br> Kathmandu, Nepal</p>
+            </div>
+            <div class="info">
+                <i class="fa-regular fa-envelope">
+            </i>
+                <p>info@fairytrinketsnp.com.np</p>
+            </div>
+            <div class="info"><i class="fa-regular fa-globe">
+                </i>
+                <p>www.fairytrinketsnp.com.np</p>
+            </div>
+        </div>
+
+       
+    </footer>
+
+    <!-- Related Products -->
+    
+
+</body>
+</html>

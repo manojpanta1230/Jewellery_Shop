@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wishlist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <div class="top-navbar">
+        <div class="icon">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+        </div>
+        <div class="logo">
+            <img src="Images/Version 2 Fairy Craft Jewellery.png" alt="" height="100px">
+        </div>
+        <p> FREE SHIPPING ALL OVER NEPAL
+        </p>
+    </div>
+    <nav>
+        <div class="dropdown">
+            <h2> Browser Categories</h2>
+        </div>
+        <ul>
+            <li style="text-decoration: underline;"><a>HOME</li></a>
+                <li><a href="shop.html"> SHOP</li></a>
+                    <li><a href="aboutus.html">ABOUT US </li></a>
+                        <li><a href="">OUR SERVICES</li></a>
+                            <li><a href="contact.html">CONTACT</li></a>
+        </ul>
+        <div class="nav-icons">
+            <a href="#"> <i class="fa-solid fa-user"></i></a>
+            <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="wishlist.html"> <i class="fa-regular fa-heart"></i></a>
+            <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="togglebar" id="togglebar"><i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+    <div class="bar" id="bar">
+        <ul>
+            <li style="text-decoration: underline;"><a>HOME</li></a>
+                <li><a>SHOP</a></li>
+                <li><a>ABOUT US </a></li>
+                <li><a>OUR SERVICES</a></li>
+                <li><a>CONTACT</a></li>
+        </ul>
+        <span id="close" style="font-size: 40px;">&times;</span>
+    </div>
+    <div class="mini-container">
+        <h1> Shoping Cart</h1>
+        <span>
+    <a href="index.html"> Home</a>
+    <a href="shop.html">  Shoping Cart</a>
+</span>
+    </div>
+    <div class="cart">
+
+
+        <div class="full-cart">
+            <div class="nav-wishlist">
+                <ul>
+                    <a href="">
+                        <li>Products</li>
+                    </a>
+                    <a href="">
+                        <li>Price</li>
+                    </a>
+                    <a href="">
+                        <li>Price</li>
+                    </a>
+                    <a href="">Total</li>
+                </a>
+                </ul>
+            </div>
+            <hr>
+
+            <div class="products" style="gap: 40px; padding: 20px;">
+                <div class="first-section">
+                    <i class="fa-solid fa-x" style="color: #767474;"></i>
+                    <div class=" wishlist-card ">
+                        <img src="Images/home-jewellery-featured-product-04-360x459.png " alt=" " width="78px " height="104px ">
+                    </div>
+                    <p>DropLets Earrings</p>
+
+                </div>
+                <div class="second-section ">
+                    <p> Rs 5050.50</p>
+                </div>
+                <div class="third-section ">
+                    <input type="number" id="quantity" name="quantity" min="1" max="5">
+                </div>
+                <div class="fourth-section ">
+                    <a href="# "> <button class="shop-button "> ADD TO CART</button></a>
+                </div>
+
+            </div>
+            <hr>
+            <div class="products ">
+                <div class="first-section ">
+                    <i class="fa-solid fa-x " style="color: #767474;"></i>
+                    <div class="wishlist-card">
+                        <img src="Images/home-featured-product-06-360x459 1.png" alt="" width="78px" height="104px">
+                    </div>
+                    <p>DropLets Earrings</p>
+
+                </div>
+                <div class="second-section">
+                    <p> Rs 5050.50</p>
+                </div>
+                <div class="third-section">
+                    <input type="number" id="quantity" name="quantity" min="1" max="5">
+                </div>
+                <div class="fourth-section">
+                    <a href="#"> <button class="shop-button"> ADD TO CART</button></a>
+                </div>
+
+            </div>
+            <hr>
+            <div class="products">
+                <div class="first-section">
+                    <i class="fa-solid fa-x" style="color: #767474;"></i>
+                    <div class="wishlist-card">
+                        <img src="Images/home-jewellery-featured-product-02-1-360x459.png" alt="" width="78px" height="104px">
+                    </div>
+                    <p>DropLets Earrings</p>
+
+                </div>
+                <div class="second-section">
+                    <p> Rs 5050.50</p>
+                </div>
+                <div class="third-section">
+                    <input type="number" id="quantity" name="quantity" min="1" max="5">
+                </div>
+                <div class="fourth-section">
+                    <a href="#"> <button class="shop-button"> ADD TO CART</button></a>
+                </div>
+
+
+            </div>
+            <hr>
+            <div class="products">
+                <div class="update-products">
+
+
+                    <a href=""><button class="shop-button" style="text-decoration: underline;
+                        background-color: #EDECEC;
+                        border-radius: 10px 10px 0px 0px;
+                        color: black;">Empty Cart</button></a>
+                    <a href=""><button class="shop-button" style="background:none; color: black; border: none;">Update Cart</button></a>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="cart-container">
+            <h2 style="padding: 15px;"> Cart Total</h2>
+
+            <div class="sub-total">
+                <span>Sub Total</span>
+                <p>NPR 150000</p>
+            </div>
+            <hr>
+            <div class="sub-total">
+                <span>Shipping-address</span>
+                <p>NPR 150</p>
+            </div>
+            <hr>
+            <div class="sub-total">
+                <span>Shipping Charge</span>
+                <p>To be Determined</p>
+            </div>
+            <hr>
+            <div class="sub-total">
+                <span style="font-weight: bold;">Total</span>
+                <p style="font-weight: bold;">NPR 150000</p>
+            </div>
+            <a href="checkoutpage.html"> <button class="shop-button">PROCEED TO CHECKOUT</button></a>
+
+
+        </div>
+    </div>
+    <hr>
+
+    <p style="font-family: 'Mea Culpa', cursive; font-size: 19px; font-weight: 400; text-align: center; padding: 20px;">Fairy Trinkets, <br>The power of this one thing that can make you feel Unique..</p>
+    <hr>
+    <div class="down-background">
+        <img src="Images/1 1.png" alt="" width="100%">
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <img src="Images/Version 2 Fairy Craft Jewellery.png" alt="" height="200px">
+        </div>
+        <div class="footer-text">
+            <h2>
+                FAIRY TRINKETS HANDICRAFTS
+            </h2>
+            <p> where Enchantment meets timeless elegance. Each exquisite piece is meticulously handcrafted to capture the ethereal beauty of the fairy realm. Welcome to the realm of Fairy Trinkets Handicrafts, Where Your Happily Ever After Begins.</p>
+        </div>
+
+        <ul>
+            <li>Ring</li>
+            <li>Earring</li>
+            <li>Necklace</li>
+            <li>Pauju</li>
+            <li>Bracelet</li>
+            <li>Special Featured</li>
+            <li>ALL</li>
+        </ul>
+
+        <div class="footer-contact">
+            <div class="info">
+                <i class="fa-solid fa-phone">
+               
+                 </i>
+                <p>+977 9842491807<br> +977 9842491807<br> +977 9842491807</p>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-location-dot">
+           
+                        </i>
+                <p>New Baneshwor,<br> Kathmandu, Nepal</p>
+            </div>
+            <div class="info">
+                <i class="fa-regular fa-envelope">
+                  </i>
+                <p>info@fairytrinketsnp.com.np</p>
+            </div>
+            <div class="info"><i class="fa-regular fa-globe">
+                    </i>
+                <p>www.fairytrinketsnp.com.np</p>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <hr> COPYRIGHT @2024
+        </div>
+    </footer>
+</body>
+
+</html>

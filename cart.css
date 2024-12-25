@@ -1,0 +1,35 @@
+.cart-container {
+    width: 346px;
+    height: 417px;
+    background-color: #F4F2F2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-total {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shop-button {
+    padding: 10px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+}
+
+.update-products {
+    position: relative;
+    left: 250px;
+    margin-top: 40px;
+}
