@@ -712,6 +712,9 @@ gap: 10px;
     .info{
         gap: 10px;
     }
+    .tooglebar{
+        font-size: 20px;
+    }
 }
 @media (max-width: 441px) {
 	.first-part img {
