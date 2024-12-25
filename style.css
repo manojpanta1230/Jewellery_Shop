@@ -240,9 +240,12 @@ ul li a {
 	font-size: 10px;
 	text-align: center;
 }
+.nav-icons{
+    display: none;
+}
 
 .right-half {
-	gap: 20px;
+	gap: 50px;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -504,8 +507,12 @@ footer .info {
 	.nav-icons {
 		display: none;
 	}
+    .left-half{
+        left: -50px;
+        position: relative;
+    }
 	.left-half img {
-		height: 210px;
+		height: 200px;
 	}
 	.footer-heading {
 		display: none;
@@ -534,13 +541,8 @@ footer .info {
 		color: white;
 	}
 
-	.top-navbar {
-		background-color: white;
-		display: flex;
-		justify-content: space-around;
-		height: 90px;
-		align-items: center;
-	}
+
+
 
 	.box {
 		overflow: hidden;
@@ -586,7 +588,7 @@ footer .info {
 	.trending-card {
 		padding: 0px;
 	}
-}
+
 .top-navbar {
 	background-color: white;
 	display: flex;
@@ -636,8 +638,22 @@ ul {
 	position: relative;
 	left: -40px;
 }
+.right-half {
+padding: 0px;
+gap: 10px;
+}
 .trending-card {
 	padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.top-footer{
+    margin-top: 210px;
+}
+.footer-logo img {
+    height: 127px;
+}
 }
 
 @media (max-width: 577px) {
@@ -691,6 +707,9 @@ ul {
 	.bar {
 		display: none;
 	}
+    .info{
+        gap: 10px;
+    }
 }
 @media (max-width: 441px) {
 	.first-part img {
@@ -702,6 +721,10 @@ ul {
 	.news-image img {
 		display: none;
 	}
+    .left-half{
+        position: relative;
+        left: 0px;
+    }
 	.left-half img {
 		height: 100px;
 	}
@@ -732,7 +755,8 @@ ul {
 		font-size: 8px;
 	}
 	.right-half {
-		padding: 32px;
+		padding:6px;
+        margin-top: 10px;
 	}
 	.shop-card {
 		width: 130px;
