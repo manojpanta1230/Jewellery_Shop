@@ -505,7 +505,7 @@ footer .info {
 		left: 20px;
 	}
 	.nav-icons {
-		display: none;
+		display: inline;
 	}
     .left-half{
         left: -50px;
@@ -549,7 +549,7 @@ footer .info {
 	}
 
 	.nav-icons {
-		font-size: 10px;
+		font-size: 12px;
 		padding: 30px;
 		color: white;
 	}
@@ -665,7 +665,9 @@ gap: 10px;
 		padding: 11px;
 	}
 	.nav-icons {
-		font-size: 7px;
+        display: flex;
+        gap: 10px;
+		font-size: 10px;
 	}
 	.cards {
 		flex-wrap: wrap;
