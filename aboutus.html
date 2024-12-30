@@ -7,7 +7,7 @@
     <title>About Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="aboutus.css">
-    <link rel="stylesheet" href="contact.html">
+  <link rel="stylesheet" href="style.css">
   
 </head>
 <style>
@@ -41,8 +41,8 @@
         <div class="nav-icons">
             <a href="#"> <i class="fa-solid fa-user"></i></a>
             <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="wishlist.html"> <i class="fa-regular fa-heart"></i></a>
-            <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"> <i class="fa-regular fa-heart"></i></a>
+            <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
         </div>
         <div class="togglebar" id="togglebar"><i class="fa-solid fa-bars"></i>
         </div>
@@ -51,12 +51,12 @@
     <div class="bar" id="bar">
         <ul>
             <li style="text-decoration: underline;"><a>HOME</li></a>
-                <li><a>SHOP</a></li>
-                <li><a>ABOUT US </a></li>
-                <li><a>OUR SERVICES</a></li>
-                <li><a >CONTACT</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="aboutus.html">ABOUT US </a></li>
+                <li><a href="#">OUR SERVICES</a></li>
+                <li><a href="contact.html" >CONTACT</a></li>
         </ul>
-        <span id="close" style="font-size: 40px;">&times;</span>
+        <span id="close" onclick={handleClose()}>&times;</span>
     </div>
     <div class="mini-container">
         <h1>About Us</h1>
@@ -212,23 +212,30 @@
        
     </footer>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-        pagination: {
-            el: ".swiper-pagination",
-        },
-    });
-    
-    let element = document.getElementById('togglebar');
-    let bar = document.getElementById('bar');
-    let span = document.getElementById("close");
-    
-    span.addEventListener('click', () => {
-        bar.classList.toggle("hide")
-    });
-    element.addEventListener("click", () => {
-    
-    
-        bar.classList.toggle("hide");
-    
-    });
-    </script>
+        // Select the toggle button, bar, and close button
+let toggleButton = document.getElementById('togglebar');
+let bar = document.getElementById('bar');
+let closeButton = document.getElementById('close');
+//  closeButton.addEventListener('click',() => console.log(bar.style.display))
+
+// Toggle the sidebar visibility
+toggleButton.addEventListener('click', () => {
+
+ if (bar.style.display === 'none' || bar.style.display === '') {
+     bar.style.display = 'block';
+ } else {
+     bar.style.display = 'none';
+ }
+});
+
+// Close the sidebar
+
+closeButton.addEventListener('click', () => {
+         bar.style.display = 'none';
+     });
+function handleClose() {
+
+bar.style.display === 'none !important'
+}
+
+     </script>

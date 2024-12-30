@@ -7,6 +7,7 @@
     <title>Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="shop.css">
+  
 </head>
 <style>
 
@@ -49,12 +50,12 @@
     <div class="bar" id="bar">
         <ul>
             <li style="text-decoration: underline;"><a>HOME</li></a>
-                <li><a>SHOP</a></li>
-                <li><a>ABOUT US </a></li>
-                <li><a>OUR SERVICES</a></li>
-                <li><a>CONTACT</a></li>
+                <li ><a href="shop.html">SHOP</a></li>
+                <li><a href="aboutus.html">ABOUT US </a></li>
+                <li><a href="#">OUR SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
         </ul>
-        <span id="close" style="font-size: 40px;">&times;</span>
+        <span id="close"onclick={handleClose()}>&times;</span>
     </div>
     <div class="mini-container">
         <h1>SHOP</h1>
@@ -283,6 +284,7 @@
      }
  });
  
+
  // Close the sidebar
  closeButton.addEventListener('click', () => {
      bar.style.display = 'none';

@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Allison&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="script.js">
+
 </head>
 <body>
     <div class="top-navbar">
@@ -50,12 +51,12 @@
     <div class="bar" id="bar">
         <ul>
             <li style="text-decoration: underline;"><a>HOME</li></a>
-                <li><a>SHOP</a></li>
-                <li><a>ABOUT US </a></li>
-                <li><a>OUR SERVICES</a></li>
-                <li><a>CONTACT</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="aboutus.html">ABOUT US </a></li>
+                <li><a href="#">OUR SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
         </ul>
-        <span id="close" style="font-size: 40px;">&times;</span>
+        <span id="close">&times;</span>
     </div>
     <div class="image-section">
         <div class="contact-card">
@@ -190,6 +191,34 @@
     </footer>
 
 </body>
+<script>
+    // Select the toggle button, bar, and close button
+let toggleButton = document.getElementById('togglebar');
+let bar = document.getElementById('bar');
+let closeButton = document.getElementById('close');
+//  closeButton.addEventListener('click',() => console.log(bar.style.display))
+
+// Toggle the sidebar visibility
+toggleButton.addEventListener('click', () => {
+
+if (bar.style.display === 'none' || bar.style.display === '') {
+ bar.style.display = 'block';
+} else {
+ bar.style.display = 'none';
+}
+});
+
+// Close the sidebar
+
+closeButton.addEventListener('click', () => {
+     bar.style.display = 'none';
+ });
+function handleClose() {
+
+bar.style.display === 'none !important'
+}
+
+ </script>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </html>

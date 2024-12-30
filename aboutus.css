@@ -8,6 +8,13 @@ body {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
 }
+.bar {
+	position: relative;
+	display: block;
+	width: 274px;
+	max-width: 274px;
+	overflow: hidden;
+}
 
 .bar ul li {
 	color: white;
@@ -266,9 +273,7 @@ footer .info {
 		display: none;
 	}
 
-	.nav-icons {
-		display: none;
-	}
+
 
 	.trend-card p {
 		font-size: 10px;
@@ -297,6 +302,16 @@ footer .info {
 	.second-half-container {
 		left: 120px;
 	}
+	.bar {
+		height: 100vh;
+		color: rgb(16, 15, 15);
+		width: 30%;
+		z-index: 5;
+
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 }
 
 @media (max-width: 576px) {
@@ -306,7 +321,9 @@ footer .info {
 	.trend-card {
 		width: 150px;
 	}
-
+ footer ul li{
+	font-size: 9px;
+ }
 	.image-container {
 		POSITION: RELATIVE;
 		left: 2px;
@@ -326,7 +343,8 @@ footer .info {
 		display: inline-block;
 	}
 	.top-navbar p {
-		display: none;
+		display: inline-block;
+		font-size: 7px;
 	}
 	.logo img {
 		left: 20px;
@@ -343,5 +361,15 @@ footer .info {
 	}
 	.footer-text {
 		font-size: 9px;
+	}
+	.nav-icons{
+		gap: 10px;
+		margin: auto;
+	}
+	.togglebar{
+		margin: auto;
+	}
+	.bar ul li{
+		font-size: 7px;
 	}
 }
