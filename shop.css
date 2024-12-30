@@ -215,6 +215,10 @@ footer .info {
     footer .info {
         padding: 5px;
     }
+    .togglebar{
+        display: none;
+    }
+
 }
 
 /* Tablet screens (max-width: 768px) */
@@ -227,6 +231,9 @@ footer .info {
         padding: 50px;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+    }
+    .nav-icons{
+        font-size: 15px;
     }
 
 
@@ -257,6 +264,9 @@ footer .info {
     .bar ul li {
         padding: 20px;
         color: white;
+    }
+    .togglebar{
+        display: flex;
     }
 
 }

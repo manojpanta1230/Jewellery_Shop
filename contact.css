@@ -207,9 +207,28 @@
 }
 
 /* Responsive Styling */
+@media (min-width:1201px) {
+    .contact-card{
+        left: 344px;
+        width: 640px;
 
+    }
+}
+@media (min-width:1500px) {
+    .contact-card{
+        left: 509px;
+        width: 660px;
+    }
+}
+@media (max-width:1200px) {
+    .contact-card{
+        left: 240px;
+        width: 640px;
+    }
+}
 /* Medium Screens (tablets) */
-@media (max-width: 992px) {
+@media (max-width: 993px) {
+
     .contact-card {
         position: relative;
         top: 20px;
@@ -218,7 +237,13 @@
         margin: 0 auto;
         transform: translateX(0);
     }
-
+    nav ul { 
+      display: flex;
+   
+      }
+    nav ul li{
+     font-size: 10px;
+    }
     .quote-section {
         position: relative;
         top: 0;
@@ -233,13 +258,27 @@
         top: 0;
         margin: 0 auto;
     }
-
+    .togglebar{
+    display: none;
+    }
     .newsletter {
         padding: 20px;
         text-align: center;
     }
 }
 
+@media (max-width:769px) {
+    nav ul{
+        display: none;
+    }
+    .togglebar{
+        display: flex;
+        align-items: center;
+    }
+    .nav-icons{
+        gap: 10px;
+    }
+}
 /* Small Screens (phones) */
 @media (max-width: 600px) {
     .box {
