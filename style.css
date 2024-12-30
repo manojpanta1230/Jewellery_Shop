@@ -475,9 +475,9 @@ footer .info {
 		grid-template-columns: repeat(2, 1fr);
 	}
 	.togglebar {
-		display: flex;
-
-		align-items: center;
+        display: flex;
+        align-items: center;
+        margin: auto;
 	}
 	.left-half img {
 		height: 260px;
