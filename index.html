@@ -56,13 +56,8 @@
                         <li><a>OUR SERVICES</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
                 </ul>
-                <span id="close" style="font-size: 40px;">&times;</span>
-                <div class="nav-icons">
-                    <a href="#"> <i class="fa-solid fa-user"></i></a>
-                    <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="wishlist.html"> <i class="fa-regular fa-heart"></i></a>
-                    <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
+                <span id="close" style="font-size: 40px;" onclick={handleClose()}>&times;</span>
+              
             </div>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -313,11 +308,13 @@
      let toggleButton = document.getElementById('togglebar');
      let bar = document.getElementById('bar');
      let closeButton = document.getElementById('close');
+    //  closeButton.addEventListener('click',() => console.log(bar.style.display))
      
      // Toggle the sidebar visibility
      toggleButton.addEventListener('click', () => {
+
          if (bar.style.display === 'none' || bar.style.display === '') {
-             bar.style.display = 'flex';
+             bar.style.display = 'block';
          } else {
              bar.style.display = 'none';
          }
@@ -327,6 +324,11 @@
      closeButton.addEventListener('click', () => {
          bar.style.display = 'none';
      });
+
+     function handleClose() {
+        console.log('hide first');
+    bar.style.display === 'none !important'
+     }
      
              </script>
         <!-- Swiper JS -->

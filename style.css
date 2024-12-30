@@ -8,6 +8,19 @@ body {
 	font-family: "Montserrat", sans-serif;
 	background-color: rgb(255, 255, 255);
 }
+.bar {
+	position: relative;
+	display: block;
+	width: 274px;
+	max-width: 274px;
+	overflow: hidden;
+}
+
+.bar > span {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
 
 .bar ul li {
 	color: white;
@@ -35,9 +48,10 @@ body {
 .bar {
 	display: none;
 	background: black;
-	height:100vh;
-	width: 200px;
-	float: inline-end;
+	position: relative;
+	width: 274px;
+	max-width: 274px;
+	overflow: hidden;
 }
 
 nav {
@@ -190,7 +204,6 @@ ul li a {
 .collection {
 	width: 100%;
 	height: 415px;
-
 	display: flex;
 	justify-content: space-between;
 }
@@ -240,8 +253,8 @@ ul li a {
 	font-size: 10px;
 	text-align: center;
 }
-.nav-icons{
-    display: none;
+.nav-icons {
+	display: none;
 }
 
 .right-half {
@@ -507,10 +520,10 @@ footer .info {
 	.nav-icons {
 		display: inline;
 	}
-    .left-half{
-        left: -50px;
-        position: relative;
-    }
+	.left-half {
+		left: -50px;
+		position: relative;
+	}
 	.left-half img {
 		height: 200px;
 	}
@@ -518,7 +531,6 @@ footer .info {
 		display: none;
 	}
 	.bar {
-	
 		height: 100vh;
 		color: rgb(16, 15, 15);
 		width: 30%;
@@ -540,9 +552,6 @@ footer .info {
 		padding: 20px;
 		color: white;
 	}
-
-
-
 
 	.box {
 		overflow: hidden;
@@ -589,71 +598,71 @@ footer .info {
 		padding: 0px;
 	}
 
-.top-navbar {
-	background-color: white;
-	display: flex;
-	justify-content: space-around;
-	height: 90px;
-	align-items: center;
-}
+	.top-navbar {
+		background-color: white;
+		display: flex;
+		justify-content: space-around;
+		height: 90px;
+		align-items: center;
+	}
 
-.box {
-	overflow: hidden;
-}
+	.box {
+		overflow: hidden;
+	}
 
-.nav-icons {
-	font-size: 10px;
-	padding: 30px;
-	color: white;
-}
-.collection {
-	display: none;
-}
-.logo img {
-	position: relative;
-	left: 30px;
-}
+	.nav-icons {
+		font-size: 10px;
+		padding: 30px;
+		color: white;
+	}
+	.collection {
+		display: none;
+	}
+	.logo img {
+		position: relative;
+		left: 30px;
+	}
 
-.top-navbar p {
-	font-size: 8px;
-}
+	.top-navbar p {
+		font-size: 8px;
+	}
 
-.nav {
-	justify-content: space-between;
-}
+	.nav {
+		justify-content: space-between;
+	}
 
-ul {
-	display: none;
-}
+	ul {
+		display: none;
+	}
 
-.heading3 {
-	transform: translate(-20px, 10px);
-}
+	.heading3 {
+		transform: translate(-20px, 10px);
+	}
 
-.heading {
-	transform: translate(-30px, 140px);
-}
+	.heading {
+		transform: translate(-30px, 140px);
+	}
 
-.heading img {
-	position: relative;
-	left: -40px;
-}
-.right-half {
-padding: 0px;
-gap: 10px;
-}
-.trending-card {
-	padding: 0px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-}
-.top-footer{
-    margin-top: 210px;
-}
-.footer-logo img {
-    height: 127px;
-}
+	.heading img {
+		position: relative;
+		left: -40px;
+	}
+	.right-half {
+		padding: 0px;
+		gap: 10px;
+	}
+	.trending-card {
+		padding: 0px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+	.top-footer {
+		margin-top: 210px;
+	}
+	.footer-logo img {
+		height: 127px;
+	}
 }
 
 @media (max-width: 577px) {
@@ -665,8 +674,8 @@ gap: 10px;
 		padding: 11px;
 	}
 	.nav-icons {
-        display: flex;
-        gap: 10px;
+		display: flex;
+		gap: 10px;
 		font-size: 10px;
 	}
 	.cards {
@@ -709,27 +718,37 @@ gap: 10px;
 	.bar {
 		display: none;
 	}
-    .info{
-        gap: 10px;
-    }
-    .tooglebar{
-        font-size: 20px;
-    }
+	.info {
+		gap: 10px;
+	}
+	.tooglebar {
+		font-size: 20px;
+	}
+	.bar > span {
+		position: absolute;
+		top: 10px;
+		right: 30px;
+	}
 }
 @media (max-width: 441px) {
 	.first-part img {
 		height: 10px;
 	}
-	.bar span {
+
+	.bar > span {
+		position: absolute;
+		top: 10px;
+		right: 30px;
 		color: white;
+		font-size: 30px;
 	}
 	.news-image img {
 		display: none;
 	}
-    .left-half{
-        position: relative;
-        left: 0px;
-    }
+	.left-half {
+		position: relative;
+		left: 0px;
+	}
 	.left-half img {
 		height: 100px;
 	}
@@ -739,9 +758,9 @@ gap: 10px;
 	.first-part h5 {
 		font-size: 10px;
 	}
-    .info{
-        gap: 10px;
-    }
+	.info {
+		gap: 10px;
+	}
 	.shop {
 		font-size: 10px;
 	}
@@ -760,8 +779,8 @@ gap: 10px;
 		font-size: 8px;
 	}
 	.right-half {
-		padding:46px;
-        margin-top: 10px;
+		padding: 46px;
+		margin-top: 10px;
 	}
 	.shop-card {
 		width: 130px;
