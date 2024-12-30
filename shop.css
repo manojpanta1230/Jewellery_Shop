@@ -290,7 +290,10 @@ footer .info {
     }
 
     .shop-card {
-        padding: 50px;
+        padding: 32px;
+    }
+    .heading a{
+        font-size: 10px;
     }
 
     footer {
