@@ -236,5 +236,9 @@ function handleClose() {
 
 bar.style.display === 'none !important'
 }
+document.addEventListener('click', (event) => {
+    if (!bar.contains(event.target) && !toggleButton.contains(event.target)) {
+        bar.style.display = 'none'; // Ensure the bar is hidden
+    }})
 
      </script>

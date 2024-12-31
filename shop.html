@@ -288,7 +288,10 @@
  closeButton.addEventListener('click', () => {
      bar.style.display = 'none';
  });
- 
+ document.addEventListener('click', (event) => {
+    if (!bar.contains(event.target) && !toggleButton.contains(event.target)) {
+        bar.style.display = 'none'; // Ensure the bar is hidden
+    }})
          </script>
     </footer>
 </body>

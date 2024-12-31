@@ -325,10 +325,16 @@
      });
 
      function handleClose() {
-        console.log('hide first');
+        
     bar.style.display === 'none !important'
+
+    
      }
-     
+     document.addEventListener('click', (event) => {
+    if (!bar.contains(event.target) && !toggleButton.contains(event.target)) {
+        bar.style.display = 'none'; // Ensure the bar is hidden
+    }})
+   
              </script>
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

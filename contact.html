@@ -21,7 +21,8 @@
             <a href="https://www.tiktok.com/@fairycraftjewellery"><i class="fa-brands fa-tiktok"></i></a> 
           
              <a href="https://www.instagram.com/fairycraftjewellery/"<i class="fa-brands fa-square-instagram"></i></a>
-         </div>s="logo">
+         </div>
+        <div class="logo">
             <img src="Images/Version 2 Fairy Craft Jewellery.png" alt="" height="100px">
         </div>
         <p> FREE SHIPPING ALL OVER NEPAL
@@ -215,6 +216,10 @@ function handleClose() {
 
 bar.style.display === 'none !important'
 }
+  document.addEventListener('click', (event) => {
+    if (!bar.contains(event.target) && !toggleButton.contains(event.target)) {
+        bar.style.display = 'none'; // Ensure the bar is hidden
+    }})
 
  </script>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
