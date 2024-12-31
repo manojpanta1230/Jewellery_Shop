@@ -206,7 +206,9 @@
     position: relative;
     top: -200px;
 }
-
+.icon a {
+	color: black;
+}
 /* Responsive Styling */
 @media (min-width:1201px) {
     .contact-card{

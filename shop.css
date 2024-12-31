@@ -138,6 +138,9 @@ ul li a {
 .info{
 	gap:10px;
 }
+.icon a {
+	color: black;
+}
 .card-text {
     font-size: 10px;
     text-align: center;

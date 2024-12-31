@@ -128,6 +128,9 @@ ul li a {
 	font-weight: 400;
 	text-align: justify;
 }
+.icon a {
+	color: black;
+}
 
 .trend-container {
 	height: 450px;

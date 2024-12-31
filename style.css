@@ -435,7 +435,9 @@ footer .info {
 .info p {
 	font-size: 10px;
 }
-
+.icon a {
+	color: black;
+}
 .footer-copyright {
 	position: absolute;
 	left: 460px;
