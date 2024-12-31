@@ -135,7 +135,9 @@ ul li a {
     position: relative;
     top: -30px;
 }
-
+.info{
+	gap:10px;
+}
 .card-text {
     font-size: 10px;
     text-align: center;

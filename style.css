@@ -441,6 +441,13 @@ footer .info {
 	left: 460px;
 	margin-top: 300px;
 }
+.footer-text p{
+	text-align: justify;
+
+}
+.info{
+	gap:10px;
+}
 @media (min-width:1201px) {
 	.togglebar{
 		display: none;
