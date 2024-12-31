@@ -115,6 +115,11 @@ ul li a {
     width: 225px;
     height: 300px;
     background-color: #f2f2f2;
+  
+}
+.card img{
+    padding-left: 20px;
+    padding-top: 50px;
 }
 
 .card a {
@@ -127,6 +132,8 @@ ul li a {
     background-color: #1F1E1E;
     color: white;
     padding: 10px;
+    position: relative;
+    top: -30px;
 }
 
 .card-text {
