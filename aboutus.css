@@ -147,6 +147,7 @@ ul li a {
 
 .trend-card p {
 	margin-top: 40px;
+	text-align: justify;
 }
 
 .center-text-container  {
@@ -164,7 +165,9 @@ ul li a {
 	position: relative;
 	top: 30px;
 }
-
+.box p {
+	text-align: center;
+}
 .image-container {
 	left: 200px;
 	width: 659px;
