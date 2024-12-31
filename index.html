@@ -58,11 +58,12 @@
                 <span id="close" onclick={handleClose()}>&times;</span>
               
             </div>
+
             <div class="swiper mySwiper">
+             
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="Images/banner1.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="Images/banner2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="Images/banner3.jpg" alt=""></div>
+                    <!-- <div ></div> -->
+              <div id="imageContainer" > </div>
 
                 </div>
                 <div class="swiper-pagination"></div>
@@ -334,6 +335,8 @@
     if (!bar.contains(event.target) && !toggleButton.contains(event.target)) {
         bar.style.display = 'none'; // Ensure the bar is hidden
     }})
+    const delay = 3000; //ms
+    
    
              </script>
         <!-- Swiper JS -->
@@ -341,5 +344,54 @@
 
  
     </body>
+    <script defer> 
+        const images = [
+         { src: 'Images/banner1.jpg', alt: 'Banner 1' },
+        { src: 'Images/banner2.jpg', alt: 'Banner 2' },
+        { src: 'Images/banner3.jpg', alt: 'Banner 3' },
+];
+
+const slideCount = images?.length;
+let imageId = document.getElementById('imageContainer')
+console.log(slideCount,"slidecount");
+// imageId.innerHTML = '';
+
+let arrIndex = 0
+
+const imageElement = document.createElement('img')
+function SlideImage(next){
+console.log("this function has been called")
+
+if(next) {
+arrIndex = (arrIndex + 1) % slideCount;
+}
+imageElement.src = images[arrIndex]?.src;
+imageElement.alt = images[arrIndex].alt;
+imageElement.id = `imageId`;
+
+console.log(images[arrIndex].src, images[arrIndex].alt,"image id ko value from the function")
+imageId.appendChild(imageElement)
+
+
+
+
+
+
+
+}
+
+setInterval(() => {
+SlideImage(true)
+},3000)
+console.log(image);
+
+SlideImage();
+
+
+
+    </script>
 
     </html>
+
+
+
