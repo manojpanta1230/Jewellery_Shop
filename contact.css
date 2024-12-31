@@ -18,7 +18,7 @@
     top: 250px;
     left: 960px;
 }
-bar
+
 
 .contact-card h2 {
     font-size: 18px;
@@ -304,7 +304,7 @@ bar
     .quote-section {
         position: relative;
         top: 0;
-        right: 0;
+        right:-20px;
         width: 100%;
         margin: 20px 0;
     }
@@ -318,6 +318,7 @@ bar
         flex-direction: column;
         width: 100%;
         margin: 0;
+        padding: 20px;
     }
 
     .newsletter {
