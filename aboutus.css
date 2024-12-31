@@ -8,13 +8,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
 }
-.bar {
-	position: relative;
-	display: block;
-	width: 274px;
-	max-width: 274px;
-	overflow: hidden;
-}
+
 
 .bar ul li {
 	color: white;
@@ -43,13 +37,7 @@ body {
 	font-size: 15px;
 }
 
-.bar {
-	display: none;
-	background: black;
-	height: 100vh;
-	width: 200px;
-	float: right;
-}
+
 
 nav {
 	background-color: rgb(75, 75, 75);
@@ -68,12 +56,27 @@ ul {
 
 ul li {
 	padding: 20px;
-	font-size: 13px;
+	font-size: 16px;
 }
 
 ul li a {
 	text-decoration: none;
 	color: white;
+}
+.bar {
+	display: none;
+	background: black;
+	position: relative;
+	width: 274px;
+	max-width: 274px;
+	overflow: hidden;
+}
+
+
+.bar > span {
+	position: absolute;
+	top: 10px;
+	right: 10px;
 }
 
 .nav-icons {
@@ -152,6 +155,7 @@ ul li a {
 }
 
 .box {
+	display:inline-block !important;
 	text-align: center;
 	position: relative;
 	top: 30px;
@@ -191,6 +195,11 @@ ul li a {
 	top: 270px;
 }
 
+.bar > span {
+
+	color: white;
+	font-size: 30px;
+}
 .last-container {
 	display: flex;
 	justify-content: space-around;
@@ -240,6 +249,20 @@ footer .info {
 	left: 460px;
 	margin-top: 300px;
 }
+@media (min-width:1201px) {
+	.classic-collection{
+		display: flex;
+		justify-content: space-around;
+	}
+	.first-half-container{
+		left: 356px;
+	}
+	.second-half-container{
+		left: 490px;
+		top: 60px;
+	}
+}
+
 
 @media (max-width: 1201px) {
 	.trend-card {
@@ -259,6 +282,10 @@ footer .info {
 	.image-container {
 		left: 70px;
 	}
+	.togglebar{
+		display:none !important;
+	}
+	
 
 	.trend-card {
 		height: 280px;
@@ -270,7 +297,7 @@ footer .info {
 	}
 
 	nav ul {
-		display: none;
+		display: flex;
 	}
 
 
@@ -312,6 +339,22 @@ footer .info {
 		top: 0;
 		right: 0;
 	}
+	
+.bar > span {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: white;
+	font-size: 30px;
+}
+	.nav-icons{
+	display: flex !important;
+	gap: 10px;
+}
+.togglebar{
+display: flex !important;
+align-items: center;
+}
 }
 
 @media (max-width: 576px) {

@@ -8,13 +8,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	background-color: rgb(255, 255, 255);
 }
-.bar {
-	position: relative;
-	display: block;
-	width: 274px;
-	max-width: 274px;
-	overflow: hidden;
-}
+
 
 .bar > span {
 	position: absolute;
@@ -134,7 +128,7 @@ ul li a {
 
 .box img {
 	height: 300px;
-	width: 300px;
+	width: 264px;
 }
 
 .hide {
@@ -471,7 +465,12 @@ footer .info {
 	}
 	.nav-icons{
 		display: flex;
+		font-size: 16px;
 	}
+	nav ul li {
+		font-size: 16px;
+	}
+
 }
 
 @media (max-width: 993px) {
@@ -479,7 +478,10 @@ footer .info {
 		overflow: hidden;
 	}
 	ul {
-		display: none;
+		display: flex;
+	}
+	nav ul li {
+		font-size: 16px;
 	}
 	.news-right-image {
 		display: none;
@@ -502,7 +504,7 @@ footer .info {
 		grid-template-columns: repeat(2, 1fr);
 	}
 	.togglebar {
-        display: flex;
+        display: none;
 		align-items: center;
 		font-size: 16px;
 
@@ -545,11 +547,15 @@ footer .info {
 	.rose-petal img {
 		left: 215px;
 	}
+	nav ul {
+		display: none;
+	}
 	.rose-text {
 		left: 20px;
 	}
+	
 	.nav-icons {
-		display: inline;
+		display: flex;
 	}
 	.left-half {
 		left: -50px;
@@ -609,9 +615,7 @@ footer .info {
 		justify-content: space-between;
 	}
 
-	ul {
-		display: none;
-	}
+
 
 	.heading3 {
 		transform: translate(-20px, 10px);
@@ -640,12 +644,6 @@ footer .info {
 	.box {
 		overflow: hidden;
 	}
-
-	.nav-icons {
-		font-size: 10px;
-		padding: 30px;
-		color: white;
-	}
 	.collection {
 		display: none;
 	}
@@ -654,17 +652,9 @@ footer .info {
 		left: 30px;
 	}
 
-	.top-navbar p {
-		font-size: 8px;
-	}
 
-	.nav {
-		justify-content: space-between;
-	}
 
-	ul {
-		display: none;
-	}
+
 
 	.heading3 {
 		transform: translate(-20px, 10px);
@@ -693,6 +683,14 @@ footer .info {
 	}
 	.footer-logo img {
 		height: 127px;
+	}
+	.togglebar{
+		display:flex;
+		align-items: center;
+	}
+	.bar>span{
+		color: white;
+		font-size: 25px;
 	}
 }
 

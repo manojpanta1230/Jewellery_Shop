@@ -33,7 +33,9 @@ display: none;
     height: 90px;
     align-items: center;
 }
-
+.togglebar{
+    display:none;
+}
 
 
 .icon {
