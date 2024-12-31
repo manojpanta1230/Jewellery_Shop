@@ -295,7 +295,9 @@ footer .info {
 	.togglebar{
 		display:none !important;
 	}
-	
+	.image-section img{
+		display: none;
+	}
 
 	.trend-card {
 		height: 280px;

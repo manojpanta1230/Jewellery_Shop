@@ -209,6 +209,10 @@
 .icon a {
 	color: black;
 }
+.imap{
+    display: flex;
+    justify-content: center;
+}
 /* Responsive Styling */
 @media (min-width:1201px) {
     .contact-card{
@@ -231,7 +235,9 @@
 }
 /* Medium Screens (tablets) */
 @media (max-width: 993px) {
-
+.image-section img{
+    display: none;
+}
     .contact-card {
         position: relative;
         top: 20px;
