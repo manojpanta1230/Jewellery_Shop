@@ -19,6 +19,9 @@ body {
 .bar ul li {
 	color: white;
 }
+.bar ul li{
+	font-size: 8px;
+}
 
 .top-navbar {
 	background-color: white;
