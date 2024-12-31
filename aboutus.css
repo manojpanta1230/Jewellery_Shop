@@ -126,6 +126,7 @@ ul li a {
 	font-family: "Lato", sans-serif;
 	font-size: 13px;
 	font-weight: 400;
+	text-align: justify;
 }
 
 .trend-container {
@@ -148,10 +149,13 @@ ul li a {
 	margin-top: 40px;
 }
 
-.center-text-container {
+.center-text-container  {
 	font-size: 10px;
 	display: inline;
 	height: auto;
+}
+.center-text-container section{
+	text-align: justify;
 }
 
 .box {
