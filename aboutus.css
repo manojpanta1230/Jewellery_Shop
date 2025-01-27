@@ -271,6 +271,9 @@ footer .info {
 		left: 490px;
 		top: 60px;
 	}
+	.background-image img{
+		display: inline;
+	}
 }
 
 
@@ -285,6 +288,9 @@ footer .info {
 
 	.classic-collection {
 		text-align: center;
+	}
+	.background-image img{
+		display: inline;
 	}
 }
 
@@ -316,6 +322,9 @@ footer .info {
 
 	.trend-card p {
 		font-size: 10px;
+	}
+	.background-image img{
+		display: inline;
 	}
 }
 
@@ -367,6 +376,14 @@ footer .info {
 display: flex !important;
 align-items: center;
 }
+.image-container{
+	width: 500px;
+	margin-top: 130px;
+
+}
+.background-image img{
+	display: inline;
+}
 }
 
 @media (max-width: 576px) {
@@ -375,6 +392,9 @@ align-items: center;
 	}
 	.trend-card {
 		width: 150px;
+	}
+	.box{
+		height: 135px !important;
 	}
  footer ul li{
 	font-size: 9px;
@@ -394,8 +414,8 @@ align-items: center;
 		display: none;
 	}
 	.last-container {
-		padding: 60px;
-		display: inline-block;
+		padding: 34px;
+        display: inline-block;
 	}
 	.top-navbar p {
 		display: inline-block;

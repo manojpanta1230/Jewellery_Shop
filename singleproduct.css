@@ -40,6 +40,14 @@ body {
 	gap: 10px;
 	margin-top: 10px;
 }
+.bar {
+	display: none;
+	background: black;
+	position: relative;
+	width: 274px;
+	max-width: 274px;
+	overflow: hidden;
+}
 
 .thumbnail-gallery img {
 	width: 70px;
@@ -257,6 +265,11 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+@media (min-width:1200px) {
+	.description-class{
+		padding-left: 230px;
+	}
+}
 @media (max-width: 768px) {
 	.container {
 		display: flex;
@@ -271,6 +284,23 @@ body {
 	}
 	.footer-logo img {
 		height: 100px;
+	}
+	.bar {
+		height: 100vh;
+		color: rgb(16, 15, 15);
+		width: 30%;
+		z-index: 5;
+
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.bar > span {
+		position: absolute;
+        top: 7px;
+        right: 23px;
+        color: white;
+        font-size: 30px;
 	}
 }
 @media (max-width: 512px) {
@@ -296,7 +326,7 @@ body {
 	}
 	.shop-container {
 		display: grid;
-    gap: 150px;
-    grid-template-columns: repeat(2, 1fr);
+    	gap: 150px;
+    	grid-template-columns: repeat(2, 1fr);
 	}
 }

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login_Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
+    }
+
+    .login-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 900px;
+      background: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .login-image {
+      flex: 1;
+      min-width: 300px;
+      background: url('./Images/Version\ 2\ Fairy\ Craft\ Jewellery.png') no-repeat center center/cover;
+    }
+
+    .form-container {
+      flex: 1;
+      min-width: 300px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .form-container h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-container label {
+      font-size: 14px;
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .form-container button {
+      padding: 12px;
+      font-size: 16px;
+      color: #ffffff;
+      background: #007bff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    #remember {
+        margin-top: 19px;
+    }
+
+    .form-container button:hover {
+      background: #0056b3;
+    }
+
+    .form-container .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .form-container .options label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+
+    .form-container .options a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .form-container .options a:hover {
+      color: #0056b3;
+    }
+
+    .form-container .toggle {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    .form-container .toggle a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .form-container .toggle a:hover {
+      color: #0056b3;
+    }
+    .back a{
+        color: black;
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .login-container {
+        flex-direction: column;
+      }
+
+      .login-image {
+        height: 200px;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-image"></div>
+    <div class="form-container">
+      <div id="login-form">
+        <h2>Login</h2>
+        <form>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+
+          <div class="options">
+            <label for="remember">
+              <input type="checkbox" id="remember"> Remember Me
+            </label>
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit">Login</button>
+        </form>
+
+        <div class="toggle">
+          Don't have an account? <a href="#" onclick="showSignup()">Sign up</a>
+        </div>
+        <div class="back">
+            <a href="index.html"> Go to Home Page</a>
+        </div>
+      </div>
+
+      <div id="signup-form" class="hidden">
+        <h2>Sign Up</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+
+          <label for="email-signup">Email</label>
+          <input type="email" id="email-signup" placeholder="Enter your email" required>
+
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" placeholder="Enter your phone number" required>
+
+          <label for="address">Address</label>
+          <input type="text" id="address" placeholder="Enter your address" required>
+
+          <label for="city">City</label>
+          <input type="text" id="city" placeholder="Enter your city" required>
+
+       
+          <label for="password-signup">Password</label>
+          <input type="password" id="password-signup" placeholder="Create a password" required>
+
+          <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="toggle">
+          Already have an account? <a href="#" onclick="showLogin()">Login</a>
+        </div>
+        <div class="back">
+            <a href="index.html"> Go to Home Page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showSignup() {
+      document.getElementById('login-form').classList.add('hidden');
+      document.getElementById('signup-form').classList.remove('hidden');
+    }
+
+    function showLogin() {
+      document.getElementById('signup-form').classList.add('hidden');
+      document.getElementById('login-form').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
