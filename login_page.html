@@ -20,7 +20,7 @@
       background: #ffffff;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       border-radius: 12px;
-      overflow: hidden;
+      /* overflow: hidden; */
     }
     .main-container{
       display: flex
@@ -31,22 +31,35 @@
     gap: 1.2rem;
     }
 
-    .main-container .login-image {
-      height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    /* border: #fefefe; */
-    overflow: hidden;
-    background-color: #FBF6E9;
-    box-sizing: border-box;
-    }
+   
+    .logo-container{
 
-    .main-container .login-image img{
-      width: 150px;
-      height: 150px;
-    }
+position: relative;
+width: 150px !important;
+aspect-ratio: 1;
+padding: 10px;
+background-color: #FBF6E9;
+border-radius: 50%;
+z-index: 5;
+
+}
+.logo-container>img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    aspect-ratio: 1;
+    /* height: 150px; */
+    /* padding: 10px; */
+    /* background-color: #FBF6E9; */
+    /* border-radius: 50%; */
+    /* flex-wrap: wrap; */
+    /* object-fit: cover; */
+    
+
+  }
     .form-container {
-      flex: 1;
       min-width: 300px;
       padding: 40px;
       display: flex;
@@ -155,7 +168,7 @@
 </head>
 <body>
     <div class="main-container">
-      <div class="login-image">
+      <div class="logo-container">
         <img src="Images/Version 2 Fairy Craft Jewellery.png" alt="logo"/>
       </div>
       <div class="login-container">
