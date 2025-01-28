@@ -66,3 +66,78 @@
 main{
     flex-grow: 1;
 }
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgray;
+    padding: 20px;
+}
+.topbar-icons{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.profile{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+.info-cards{
+    width: 284px;
+    height: 180px;
+    background-color: rgb(194, 194, 194);
+    display: flex;
+}
+.in-cards{
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+}
+.tri-button{
+    display: flex;
+gap: 20px;
+padding: 20px;
+}
+.inner-button{
+    width: 272px;
+    height: 90px;
+    background-color: rgb(84, 84, 84);
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        color: white;
+        border-radius: 20px;
+        padding-left: 31px;
+}
+.semi-container{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    
+}
+.semi-container-bar ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 24px;
+}
+.semi-container>tr{
+    display: flex;
+        justify-content: space-around;
+        gap: 80px;
+        padding: 19px;
+        border: 2px solid wheat;
+}
