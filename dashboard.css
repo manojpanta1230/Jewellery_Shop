@@ -136,7 +136,7 @@ flex-wrap: wrap;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    font-size: 14px;
+    font-size: 10px;
     flex-wrap: wrap;
 }
 .side-navbar{
@@ -144,8 +144,13 @@ flex-wrap: wrap;
 }
  .semi-container tr{
    
-        overflow-x: auto;
-        border: 2px solid red;
+           /* text-align: center; */
+    font-size: 10px;
+    display: flex
+;
+    gap: 10px;
+    overflow-x: auto;
+    border: 1px solid red;
 } */
 .tooglebar{
     display: none;
