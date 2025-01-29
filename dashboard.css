@@ -136,6 +136,9 @@ padding: 20px;
     list-style-type: none;
     font-size: 24px;
 }
+.side-navbar{
+    display: none;
+}
 .semi-container tr{
     display: flex;
         justify-content: space-around;
@@ -143,18 +146,44 @@ padding: 20px;
         padding: 19px;
         border: 2px solid wheat;
 }
+@media (min-width:76px) {
+   .tooglebar{
+    display: none;
+   } 
+}
 @media (max-width:769px) {
     .dashboard{
         display: inline-block;
     }
+    .side-navbar{
+  display: none;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .side-navbar>span{
+        display: flex;
+            justify-content: end;
+    }
     .sidebar{
         display: flex;
             width: 100%;
+            justify-content: space-between;
     }
     .menu{
-        display: flex
-        ;
-            flex-wrap: wrap;
-            align-items: center;
+
+        display: none;
+            /* flex-wrap: wrap;
+            align-items: center; */
     }
+ .tooglebar{
+    display: block;
+    align-items: center;
+ }
+ .tooglebar>span{
+    font-size: 50px;
+ }
+    
 }
