@@ -5,7 +5,7 @@
 }
 .dashboard{
     display: flex;
-    height: 100vh;
+    
 }
 .sidebar {
     background-color: #2c3e50;
@@ -13,6 +13,8 @@
     color: #fff;
     padding-top: 20px;
     position:relative;
+   
+   
 }
 .logo-image img {
 
@@ -123,7 +125,7 @@ padding: 20px;
 }
 .semi-container{
     width: 100%;
-    height: 50%;
+   height: max-content;
     background-color: rgb(70, 70, 70);
     color: white;
     
@@ -134,7 +136,7 @@ padding: 20px;
     list-style-type: none;
     font-size: 24px;
 }
-.semi-container>tr{
+.semi-container tr{
     display: flex;
         justify-content: space-around;
         gap: 80px;
