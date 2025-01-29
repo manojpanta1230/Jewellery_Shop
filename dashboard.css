@@ -143,3 +143,18 @@ padding: 20px;
         padding: 19px;
         border: 2px solid wheat;
 }
+@media (max-width:769px) {
+    .dashboard{
+        display: inline-block;
+    }
+    .sidebar{
+        display: flex;
+            width: 100%;
+    }
+    .menu{
+        display: flex
+        ;
+            flex-wrap: wrap;
+            align-items: center;
+    }
+}
