@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 
 }
 .dashboard{
@@ -89,7 +90,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-margin-top: 20px;
+    margin-top: 20px;
     width: 100%;
     justify-content: center;
 }
@@ -109,7 +110,8 @@ margin-top: 20px;
 .tri-button{
     display: flex;
 gap: 20px;
-padding: 20px;
+padding: 65px;
+flex-wrap: wrap;
 }
 .inner-button{
     width: 272px;
@@ -134,29 +136,28 @@ padding: 20px;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    font-size: 24px;
+    font-size: 14px;
+    flex-wrap: wrap;
 }
 .side-navbar{
     display: none;
 }
-.semi-container tr{
-    display: flex;
-        justify-content: space-around;
-        gap: 80px;
-        padding: 19px;
-        border: 2px solid wheat;
-}
-@media (min-width:76px) {
-   .tooglebar{
+ .semi-container tr{
+   
+        overflow-x: auto;
+        border: 2px solid red;
+} */
+.tooglebar{
     display: none;
-   } 
+
 }
+
 @media (max-width:769px) {
     .dashboard{
         display: inline-block;
     }
     .side-navbar{
-  display: none;
+    display: none;
         background-color: black;
         position: absolute;
         top: 0;
@@ -179,8 +180,8 @@ padding: 20px;
             align-items: center; */
     }
  .tooglebar{
-    display: block;
-    align-items: center;
+    display: flex;
+            align-items: center;
  }
  .tooglebar>span{
     font-size: 50px;
