@@ -146,8 +146,7 @@ flex-wrap: wrap;
    
            /* text-align: center; */
     font-size: 10px;
-    display: flex
-;
+    display: flex;
     gap: 10px;
     overflow-x: auto;
     border: 1px solid red;
@@ -167,11 +166,13 @@ flex-wrap: wrap;
         position: absolute;
         top: 0;
         right: 0;
+        padding: 20px;
     }
 
     .side-navbar>span{
         display: flex;
             justify-content: end;
+            font-size:40px;
     }
     .sidebar{
         display: flex;
