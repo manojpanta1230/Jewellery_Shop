@@ -121,13 +121,14 @@
       </aside>
      <main>
         <div class="topbar">
-            <div class="topbar-icons">
-                <i class="fas fa-bell"></i>
-               <i class="fas fa-comment"></i>
-           </div>
+           
+            
+         
             <div class="profile">
+              <i class="fas fa-bell"></i>
                 <img src="Images/Test Profile.png" alt="Profile Picture" class="profile-pic">
                 <div class="profile-info">
+                
                    <span class="profile-name">Ella Jones</span>
                    <span class="profile-role">Admin</span>
                    </div>
@@ -137,60 +138,118 @@
                  </div>
            </div>
         </div>
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,900" rel="stylesheet">
 
-        <div class="cards">
-            <div class="info-cards">
-                <i class="fas fa-home" style="font-size: 40px;
-    margin-top: 10px;padding-left: 10px;color: white;"></i>
-                <div class="in-cards">
-<h4>Available Rooms</h4>
-<p>50/100</p>
-                </div>
-            </div>
-            <div class="info-cards">
-                <i class="fa-solid fa-burger" style="font-size: 40px;
-    margin-top: 10px;padding-left:10px; color: white;"></i>
-                            <div class="in-cards">
-            <h4>Current Food Orders</h4>
-            <p>50</p>
-                            </div>
-            </div>
-            <div class="info-cards">
-                <i class="fa-solid fa-truck-fast" style="font-size: 40px;
-    margin-top: 10px; padding-left: 10px;color: white;"></i>
-                            <div class="in-cards">
-            <h4>Delivered Orders</h4>
-            <p>100</p>
-                            </div>
-            </div>
-            <div class="info-cards">
-               
- 
-
-    <i class="fa-solid fa-sack-dollar" style="font-size: 40px;
-    margin-top: 10px; padding-left: 10px;color: white;"></i>
-                            <div class="in-cards">
-            <h4>Total Revenue</h4>
-            <p>$100</p>
-                            </div>
-            </div>
-        </div>
-
-        <div class="tri-button">
-            <div class="inner-button">
-                <i class="fa-solid fa-vault"></i>
-                <p><b>New Booking</b></p>
-            </div>
-            <div class="inner-button">
-                <i class="fa-solid fa-vault"></i>
-                <p><b>New Booking</b></p>
-            </div>
-            <div class="inner-button">
-                <i class="fa-solid fa-vault"></i>
-                <p><b>New Booking</b></p>
-            </div>
-        </div>
+<div class="container">
+  <div class="card balance-card">
+    <i class="fas fa-bell"></i>
+      <h2>Revenue</h2>
     
+      <p class="value">$23,540.00</p>
+  </div>
+  <div class="card balance-card">
+    <i class="fas fa-bell"></i>
+    <h2>Orders</h2>
+  
+    <p class="value">20</p>
+</div>
+<div class="card balance-card">
+  <i class="fa-solid fa-vault"></i>
+  <h2>Room Available</h2>
+
+  <p class="value">100</p>
+</div>
+<div class="card balance-card">
+  <i class="fas fa-tasks"></i>
+  <h2>Bookings</h2>
+ 
+  <p class="value">50</p>
+</div>
+</div>
+     
+<div class="button-container">
+  <button class="dashboard-button">
+      <i class="fas fa-ticket-alt"></i> <!-- Font Awesome Ticket Icon -->
+      <span>New Booking</span>
+  </button>
+
+  <button class="dashboard-button">
+      <i class="fas fa-list-alt"></i> <!-- Font Awesome List Icon -->
+      <span>Room Food Order</span>
+  </button>
+
+  <button class="dashboard-button">
+      <i class="fas fa-utensils"></i> <!-- Font Awesome Utensils Icon -->
+      <span>Restaurant Order</span>
+  </button>
+</div>
+    
+
+        <div class="table-container">
+          <table class="order-table">
+              <thead>
+                  <tr>
+                      <th>Date</th>
+                      <th>Order ID</th>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th>Total</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>2024-01-20</td>
+                      <td>#12345</td>
+                      <td>Product A</td>
+                      <td>$25.00</td>
+                      <td>2</td>
+                      <td>$50.00</td>
+                  </tr>
+                  <tr>
+                      <td>2024-01-19</td>
+                      <td>#12344</td>
+                      <td>Product B</td>
+                      <td>$15.50</td>
+                      <td>3</td>
+                      <td>$46.50</td>
+                  </tr>
+                  <tr>
+                      <td>2024-01-18</td>
+                      <td>#12343</td>
+                      <td>Product C</td>
+                      <td>$10.00</td>
+                      <td>5</td>
+                      <td>$50.00</td>
+                  </tr>
+                 <tr>
+                      <td>2024-01-17</td>
+                      <td>#12342</td>
+                      <td>Product D</td>
+                      <td>$30.00</td>
+                      <td>1</td>
+                      <td>$30.00</td>
+                  </tr>
+                   <tr>
+                      <td>2024-01-16</td>
+                      <td>#12341</td>
+                      <td>Product E</td>
+                      <td>$8.00</td>
+                      <td>4</td>
+                      <td>$32.00</td>
+                  </tr>
+                    <tr>
+                      <td>2024-01-15</td>
+                      <td>#12340</td>
+                      <td>Product F</td>
+                      <td>$12.00</td>
+                      <td>2</td>
+                      <td>$24.00</td>
+                  </tr>
+  
+              </tbody>
+          </table>
+      </div>
   </body>
   </html>
 
