@@ -1,30 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
-    <link rel="stylesheet" href="dashboard.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+
     <title>Dashboard</title>
-</head>
-<style>
- 
-</style>
-<body>
+  </head>
+
+  <body>
     <div class="dashboard">
       <aside class="sidebar">
         <div class="logo-image">
-            <img src="Images/Version 2 Fairy Craft Jewellery.png" alt="">
+          <img src="Images/Version 2 Fairy Craft Jewellery.png" alt />
         </div>
-         <div class="side-navbar" id="hidden">
+        <div class="side-navbar" id="hidden">
           <span class="material-symbols-outlined" onclick="hideSideNavBar()">
             close
-            </span>
-          <a href="#" class="menu-item active"><i class="fas fa-home"></i> Home</a>
+          </span>
+          <a href="#" class="menu-item active"
+            ><i class="fas fa-home"></i> Home</a
+          >
           <!-- <div class="dropdown-item">
             <a href="#" class="menu-item dropdown-toggle" onclick="toggleSubMenu('billing-submenu')">
                 <i class="fas fa-file-invoice-dollar"></i> Billing <i class="fas fa-plus"></i>
@@ -67,218 +77,181 @@
             <a href="#">User Role</a>
         </div>
     </div> -->
-        </div> 
-
-        
-        <nav class="menu">
-            <a href="#" class="menu-item active"><i class="fas fa-home"></i> Home</a>
-            <div class="dropdown-item">
-              <a href="#" class="menu-item dropdown-toggle" onclick="toggleSubMenu('billing-submenu')">
-                  <i class="fas fa-file-invoice-dollar"></i> Billing <i class="fas fa-plus"></i>
-              </a>
-              <div id="billing-submenu" class="sub-menu">
-                  <a href="#">Sales</a>
-                  <a href="#">Purchases</a>
-                  <a href="#">Orders</a>
-                  <a href="#">Revenue</a>
-              </div>
-          </div>
-  
-              
-           
-           
-            <div class="dropdown-item">
-              <a href="#" class="menu-item dropdown-toggle" onclick="toggleSubMenu('finance-submenu')">
-                  <i class="fas fa-money-bill-wave"></i> Finance <i class="fas fa-plus"></i>
-              </a>
-              <div id="finance-submenu" class="sub-menu">
-                  <a href="#">Inventory</a>
-                  <a href="#">Items</a>
-              </div>
-          </div>
-              <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Vendors</a>
-              <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Users</a>
-              <a href="#" class="menu-item "><i class="fas fa-tasks"></i> Customers</a>
-              <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Products</a>
-              <div class="dropdown-item">
-                <a href="#" class="menu-item dropdown-toggle" onclick="toggleSubMenu('settings-submenu')">
-                    <i class="fas fa-cog"></i> Settings <i class="fas fa-plus"></i>
-                </a>
-                <div id="settings-submenu" class="sub-menu">
-                    <a href="#">Category</a>
-                    <a href="#">Sub Category</a>
-                    <a href="#">Unit</a>
-                    <a href="#">User Role</a>
-                </div>
-            </div>
-               
-          
-          </nav>
-          <div class="tooglebar" id="show">
-            <span class="material-symbols-outlined" onclick="hideSideNavBar()" >
-            menu
-            </span></div>
-      </aside>
-     <main>
-        <div class="topbar">
-           
-            
-         
-            <div class="profile">
-              <i class="fas fa-bell"></i>
-                <img src="Images/Test Profile.png" alt="Profile Picture" class="profile-pic">
-                <div class="profile-info">
-                
-                   <span class="profile-name">Ella Jones</span>
-                   <span class="profile-role">Admin</span>
-                   </div>
-                 <div class="profile-dropdown">
-                    <a href="#">Profile</a>
-                    <a href="#">Logout</a>
-                 </div>
-           </div>
         </div>
-<link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,900" rel="stylesheet">
 
-<div class="container">
-  <div class="card balance-card">
-    <i class="fas fa-bell"></i>
-      <h2>Revenue</h2>
-    
-      <p class="value">$23,540.00</p>
-  </div>
-  <div class="card balance-card">
-    <i class="fas fa-bell"></i>
-    <h2>Orders</h2>
-  
-    <p class="value">20</p>
-</div>
-<div class="card balance-card">
-  <i class="fa-solid fa-vault"></i>
-  <h2>Room Available</h2>
+        <nav class="menu">
+          <a href="#" class="menu-item active"
+            ><i class="fas fa-home"></i> Home</a
+          >
+          <div class="dropdown-item">
+            <a
+              href="#"
+              class="menu-item dropdown-toggle"
+              onclick="toggleSubMenu('billing-submenu')"
+            >
+              <i class="fas fa-file-invoice-dollar"></i> Billing
+              <i class="fas fa-plus"></i>
+            </a>
+            <div id="billing-submenu" class="sub-menu">
+              <a href="#">Sales</a>
+              <a href="#">Purchases</a>
+              <a href="#">Orders</a>
+              <a href="#">Revenue</a>
+            </div>
+          </div>
 
-  <p class="value">100</p>
-</div>
-<div class="card balance-card">
-  <i class="fas fa-tasks"></i>
-  <h2>Bookings</h2>
- 
-  <p class="value">50</p>
-</div>
-</div>
-     
-<div class="button-container">
-  <button class="dashboard-button">
-      <i class="fas fa-ticket-alt"></i> <!-- Font Awesome Ticket Icon -->
-      <span>New Booking</span>
-  </button>
+          <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Vendors</a>
+          <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Users</a>
+          <a href="#" class="menu-item"
+            ><i class="fas fa-tasks"></i> Customers</a
+          >
+          <a href="#" class="menu-item"
+            ><i class="fas fa-tasks"></i> Products</a
+          >
 
-  <button class="dashboard-button">
-      <i class="fas fa-list-alt"></i> <!-- Font Awesome List Icon -->
-      <span>Room Food Order</span>
-  </button>
+          <div class="dropdown-item">
+            <a
+              href="#"
+              class="menu-item dropdown-toggle"
+              onclick="toggleSubMenu('settings-submenu')"
+            >
+              <i class="fas fa-cog"></i> Settings <i class="fas fa-plus"></i>
+            </a>
+            <div id="settings-submenu" class="sub-menu">
+              <a href="#">Category</a>
+              <a href="#">Sub Category</a>
+              <a href="#">Unit</a>
+              <a href="#">User Role</a>
+            </div>
+          </div>
 
-  <button class="dashboard-button">
-      <i class="fas fa-utensils"></i> <!-- Font Awesome Utensils Icon -->
-      <span>Restaurant Order</span>
-  </button>
-</div>
-    
+          <div class="dropdown-item">
+            <a
+              href="#"
+              class="menu-item dropdown-toggle"
+              onclick="toggleSubMenu('finance-submenu')"
+            >
+              <i class="fas fa-money-bill-wave"></i> Finance
+              <i class="fas fa-plus"></i>
+            </a>
+            <div id="finance-submenu" class="sub-menu">
+              <a href="#">Inventory</a>
+              <a href="#">Items</a>
+            </div>
+          </div>
+        </nav>
+        <div class="tooglebar" id="show">
+          <span class="material-symbols-outlined" onclick="hideSideNavBar()">
+            menu
+          </span>
+        </div>
+      </aside>
+      <main>
+        <div class="topbar">
+          <div class="profile">
+            <i class="fas fa-bell"></i>
+            <img
+              src="Images/Test Profile.png"
+              alt="Profile Picture"
+              class="profile-pic"
+            />
+            <div class="profile-info">
+              <span class="profile-name">Ella Jones</span>
+              <span class="profile-role">Admin</span>
+            </div>
+            <div class="profile-dropdown">
+              <a href="#">Profile</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card balance-card">
+            <i class="fas fa-bell"></i>
+            <h2>Revenue</h2>
 
-        <div class="table-container">
-          <table class="order-table">
+            <p class="value">$23,540.00</p>
+          </div>
+          <div class="card balance-card">
+            <i class="fas fa-bell"></i>
+            <h2>Orders</h2>
+
+            <p class="value">20</p>
+          </div>
+          <div class="card balance-card">
+            <i class="fa-solid fa-vault"></i>
+            <h2>Room Available</h2>
+
+            <p class="value">100</p>
+          </div>
+          <div class="card balance-card">
+            <i class="fas fa-tasks"></i>
+            <h2>Bookings</h2>
+
+            <p class="value">50</p>
+          </div>
+        </div>
+          <div class="button-container">
+            <button class="dashboard-button">
+              <i class="fas fa-ticket-alt"></i>
+              <!-- Font Awesome Ticket Icon -->
+              <span>New Booking</span>
+            </button>
+
+            <button class="dashboard-button">
+              <i class="fas fa-list-alt"></i>
+              <!-- Font Awesome List Icon -->
+              <span>Room Food Order</span>
+            </button>
+
+            <button class="dashboard-button">
+              <i class="fas fa-utensils"></i>
+              <!-- Font Awesome Utensils Icon -->
+              <span>Restaurant Order</span>
+            </button>
+          </div>
+          <div class="table-container">
+            <table class="order-table">
               <thead>
-                  <tr>
-                      <th>Date</th>
-                      <th>Order ID</th>
-                      <th>Name</th>
-                      <th>Price</th>
-                      <th>Quantity</th>
-                      <th>Total</th>
-                  </tr>
+                <tr>
+                  <th>Date</th>
+                  <th>Order ID</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                </tr>
               </thead>
-              <tbody>
-                  <tr>
-                      <td>2024-01-20</td>
-                      <td>#12345</td>
-                      <td>Product A</td>
-                      <td>$25.00</td>
-                      <td>2</td>
-                      <td>$50.00</td>
-                  </tr>
-                  <tr>
-                      <td>2024-01-19</td>
-                      <td>#12344</td>
-                      <td>Product B</td>
-                      <td>$15.50</td>
-                      <td>3</td>
-                      <td>$46.50</td>
-                  </tr>
-                  <tr>
-                      <td>2024-01-18</td>
-                      <td>#12343</td>
-                      <td>Product C</td>
-                      <td>$10.00</td>
-                      <td>5</td>
-                      <td>$50.00</td>
-                  </tr>
-                 <tr>
-                      <td>2024-01-17</td>
-                      <td>#12342</td>
-                      <td>Product D</td>
-                      <td>$30.00</td>
-                      <td>1</td>
-                      <td>$30.00</td>
-                  </tr>
-                   <tr>
-                      <td>2024-01-16</td>
-                      <td>#12341</td>
-                      <td>Product E</td>
-                      <td>$8.00</td>
-                      <td>4</td>
-                      <td>$32.00</td>
-                  </tr>
-                    <tr>
-                      <td>2024-01-15</td>
-                      <td>#12340</td>
-                      <td>Product F</td>
-                      <td>$12.00</td>
-                      <td>2</td>
-                      <td>$24.00</td>
-                  </tr>
-  
-              </tbody>
-          </table>
-      </div>
+            </table>
+          </div>
+
+      </main>
+    </div>
+    <script>
+      function hideSideNavBar() {
+        let x = document.getElementById("hidden");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function toggleSubMenu(id) {
+        var submenus = document.querySelectorAll(".sub-menu");
+
+        submenus.forEach(function (submenu) {
+          if (submenu.id !== id) {
+            submenu.style.display = "none";
+          }
+        });
+        var submenu = document.getElementById(id);
+        if (submenu.style.display === "block") {
+          submenu.style.display = "none";
+        } else {
+          submenu.style.display = "block";
+        }
+      }
+    </script>
   </body>
-  </html>
-
-
-   
-     </main>
-      
-</div>
-<script>
-
-  function hideSideNavBar(){
-   let x= document.getElementById('hidden');
-   if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
- 
-     }
-     function toggleSubMenu(id) {
-    let submenu = document.getElementById(id);
-    if (submenu.style.display === "none" || submenu.style.display === "") {
-        submenu.style.display = "block";
-    } else {
-        submenu.style.display = "none";
-    }
-}
-
-</script>
-
-</body>
 </html>

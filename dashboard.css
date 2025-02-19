@@ -3,24 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 
+
+}
+body{
+    font-family: "Montserrat", serif;
 }
 
 .dashboard {
     display: flex;
-
-
+    flex-wrap: wrap;
 }
 
-.sidebar {
+.dashboard > main{
+    flex: 70%;
+    overflow: hidden;
+}
+.dashboard > .sidebar {
     background-color: #2c3e50;
-    width: 250px;
+ flex: 20%;
     color: #fff;
+   min-height:100vh; 
+   max-height: 100vh;
+   overflow: scroll;
     padding-top: 10px;
-
-
-
-
 }
+.sidebar::-webkit-scrollbar {
+    display: none;
+  }
+  .sidebar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
 .logo-image img {
 
@@ -111,7 +124,7 @@
     position: absolute;
     top: 80%;
     left: 200px;
-
+    z-index: 5;
     background: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -134,17 +147,10 @@
     display: block;
 }
 
-main {
-    flex-grow: 1;
-}
 
 .topbar {
     display: flex;
     justify-content: end;
-
-    padding: 20px;
-
-
 }
 
 .topbar-icons {
@@ -216,8 +222,8 @@ main {
     display: none;
 
 }
-
-.sub-menu {
+.sub-menu .active
+.sub-menu{
     display: none;
     padding-left: 20px;
     background-color: #34495e;
@@ -243,7 +249,7 @@ main {
     color: #fff;
 }
 
-@media (min-width:996px) {
+@media (min-width:763px) {
     .tooglebar {
         display: none;
     }
@@ -268,6 +274,7 @@ main {
         display: flex;
         justify-content: end;
         font-size: 40px;
+
     }
 
     .sidebar {
@@ -332,11 +339,9 @@ main {
 
 .container {
     display: flex;
-    gap: 20px;
-    /*Spacing between cards*/
-    padding: 20px;
-    justify-content: space-around;
-    margin: 2.6%;
+        gap: 20px;
+        padding: 35px;
+        justify-content: space-aroun
 }
 
 .card {
@@ -349,8 +354,7 @@ main {
 }
 
 .balance-card {
-    background: linear-gradient(135deg, #673AB7, #9C27B0);
-    /*Purple Gradient*/
+    background: linear-gradient(285deg, #302a2a, #2b262c);    /*Purple Gradient*/
     color: white;
     position: relative;
     /*For the circle background effect later*/
@@ -379,7 +383,7 @@ main {
 }
 
 .balance-card .value {
-    font-size: 2.5em;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -406,13 +410,12 @@ main {
 }
 
 .table-container {
-    width: 95%;
     /* Make the container responsive */
-    max-width: 1200px;
+  
     /* Set a maximum width for larger screens */
     overflow-x: auto;
     /* Enable horizontal scrolling on smaller screens */
-    padding: 20px;
+    padding: 30px;
 }
 
 .order-table {
@@ -466,8 +469,8 @@ main {
     display: flex;
     gap: 20px;
     justify-content: start;
-    padding-left: 52px;
-    padding-top: 20px;
+    padding-left: 38px;
+
 }
 
 .dashboard-button {
