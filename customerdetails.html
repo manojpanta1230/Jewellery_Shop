@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="dashboard.css" />
 
-    <title>Dashboard</title>
+    <title>Customer Details</title>
   </head>
 
   <body>
@@ -65,7 +65,7 @@
           
       <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Vendors</a>
       <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Users</a>
-      <a href="" class="menu-item "><i class="fas fa-tasks"></i> Customers</a>
+      <a href="#" class="menu-item "><i class="fas fa-tasks"></i> Customers</a>
       <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Products</a>
       <div class="dropdown-item">
         <a href="#" class="menu-item dropdown-toggle" onclick="toggleSubMenu('settings-submenu')">
@@ -103,7 +103,7 @@
 
           <a href="vendorDetails.html" class="menu-item"><i class="fas fa-tasks"></i> Vendors</a>
           <a href="UsersDetails.html" class="menu-item"><i class="fas fa-tasks"></i> Users</a>
-          <a href="customerdetails.html" class="menu-item"
+          <a href="#" class="menu-item"
             ><i class="fas fa-tasks"></i> Customers</a
           >
           <a href="productDetails.html" class="menu-item"
@@ -166,7 +166,7 @@
             </div>
           </div>
         </div>
-        <div class="container">
+        <!-- <div class="container">
           <div class="card balance-card">
             <i class="fas fa-bell"></i>
             <h2>Revenue</h2>
@@ -191,7 +191,7 @@
 
             <p class="value">50</p>
           </div>
-        </div>
+        </div> -->
           <div class="button-container">
             <button class="dashboard-button">
               <i class="fas fa-ticket-alt"></i>
@@ -216,11 +216,10 @@
               <thead>
                 <tr>
                   <th>Date</th>
-                  <th>Order ID</th>
-                  <th>Name</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                  <th>Total</th>
+                  <th>Customers Name</th>
+                  <th> Phone Number</th>
+                  <th>Email</th>
+                  <th>Status</th>
                 </tr>
               </thead>
             </table>
@@ -245,7 +244,6 @@
           if (submenu.id !== id) {
             submenu.style.display = "none";
           }
-          
         });
         var submenu = document.getElementById(id);
         if (submenu.style.display === "block") {
