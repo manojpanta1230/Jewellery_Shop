@@ -423,23 +423,16 @@ body{
 
 .order-table {
     width: 100%;
-    /* Table takes full width of its container */
     border-collapse: collapse;
-    /* No spacing between borders */
-    background: linear-gradient(to right, #673AB7, #512DA8);
-    /* Purple gradient */
-    color: white;
-    /* White text */
+    color: black;
     border-radius: 10px;
-    /* Rounded corners */
     overflow: hidden;
-    /* Required for border-radius to work properly with thead/tbody */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
 }
 
 .order-table thead {
     background-color: rgba(255, 255, 255, 0.1);
-    /* Semi-transparent white header */
     text-align: left;
     /* Align header text left */
 }
@@ -447,27 +440,22 @@ body{
 .order-table th,
 .order-table td {
     padding: 12px 15px;
-    /* Padding for cells */
     text-align: left;
 }
 
 .order-table th {
     font-weight: bold;
-    /* Bold header text */
     background-color: black;
+    color: white;
 }
 
 .order-table tbody tr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    /* Light border between rows */
 }
 
 .order-table tbody tr:last-child {
     border-bottom: none;
-    /* No border on the last row */
 }
-
-
 .button-container {
     display: flex;
     gap: 20px;

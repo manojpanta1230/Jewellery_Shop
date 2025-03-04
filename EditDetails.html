@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="dashboard.css" />
 
-    <title>Vendor Details </title>
+    <title>Dashboard</title>
   </head>
 
   <body>
@@ -65,7 +65,7 @@
           
       <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Vendors</a>
       <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Users</a>
-      <a href="#" class="menu-item "><i class="fas fa-tasks"></i> Customers</a>
+      <a href="" class="menu-item "><i class="fas fa-tasks"></i> Customers</a>
       <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Products</a>
       <div class="dropdown-item">
         <a href="#" class="menu-item dropdown-toggle" onclick="toggleSubMenu('settings-submenu')">
@@ -165,149 +165,66 @@
               <a href="#">Logout</a>
             </div>
           </div>
+
+          
+        
         </div>
-        <!-- <div class="container">
-          <div class="card balance-card">
-            <i class="fas fa-bell"></i>
-            <h2>Revenue</h2>
+       
 
-            <p class="value">$23,540.00</p>
-          </div>
-          <div class="card balance-card">
-            <i class="fas fa-bell"></i>
-            <h2>Orders</h2>
+        <form action="#" method="POST" id="edit-form">
+            <div>
+            <label for="code">Code</label>
+            <input type="text" id="code" name="code" readonly>
+        </div>
+        <div>
+        
+            <label for="company-name">Company Name</label>
+            <input type="text" id="company-name" name="company-name">
+            
+            <label for="company-email">Company Email</label>
+            <input type="email" id="company-email" name="company-email">
+        </div>
+        <div>
 
-            <p class="value">20</p>
-          </div>
-          <div class="card balance-card">
-            <i class="fa-solid fa-vault"></i>
-            <h2>Room Available</h2>
+            <label for="company-contact">Company Contact</label>
+            <input type="text" id="company-contact" name="company-contact">
+            
+            <label for="company-address">Company Address</label>
+            <input type="text" id="company-address" name="company-address">
+        </div>
+        <div>
 
-            <p class="value">100</p>
-          </div>
-          <div class="card balance-card">
-            <i class="fas fa-tasks"></i>
-            <h2>Bookings</h2>
+            <label for="staff-name">Staff Name</label>
+            <input type="text" id="staff-name" name="staff-name">
+            
+            <label for="staff-email">Staff Email</label>
+            <input type="email" id="staff-email" name="staff-email">
+        </div>
+        <div>
 
-            <p class="value">50</p>
-          </div>
-        </div> -->
-          <div class="button-container">
-            <button class="dashboard-button">
-              <i class="fas fa-ticket-alt"></i>
-              <!-- Font Awesome Ticket Icon -->
-              <span>New Booking</span>
-            </button>
+            <label for="staff-contact">Staff Contact</label>
+            <input type="text" id="staff-contact" name="staff-contact">
+            
+            <label for="designation">Designation</label>
+            <input type="text" id="designation" name="designation">
+        </div>
+        
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+        
+            <label for="status">Status</label>
+            <select id="status" name="status">
+              <option value="Active">Active</option>
+              <option value="Inactive">Inactive</option>
+            </select>
+        <br>
+            <button type="submit">Save</button>
+          </form>
 
-            <button class="dashboard-button">
-              <i class="fas fa-list-alt"></i>
-              <!-- Font Awesome List Icon -->
-              <span>Room Food Order</span>
-            </button>
-
-            <button class="dashboard-button">
-              <i class="fas fa-utensils"></i>
-              <!-- Font Awesome Utensils Icon -->
-              <span>Restaurant Order</span>
-            </button>
-          </div>
-          <div class="table-container">
-            <table class="order-table">
-              <thead>
-                <tr>
-                  <th>Code</th>
-                  <th>Company Name</th>
-                  <th>Company Email</th>
-                  <th>Company Contact</th>
-                  <th>Company Address</th>
-                  <th>Staff Name</th>
-                  <th>Staff Email</th>
-                  <th>Staff Contact</th>
-                  <th>Designation</th>
-                  <th>Gender</th>
-                  <th>Status</th>
-                  <th> Edit</th>
-                </tr>
-               
-                <tr>
-                    <td>001</td>
-                    <td>Tech Innovations Ltd.</td>
-                    <td>contact@techinnovations.com</td>
-                    <td>+1 234 567 890</td>
-                    <td>123 Silicon Valley, Suite 200, San Francisco, CA</td>
-                    <td>John Doe</td>
-                    <td>johndoe@techinnovations.com</td>
-                    <td>+1 234 567 891</td>
-                    <td>Project Manager</td>
-                    <td>Male</td>
-                    <td>Active</td>
-                    <td><i class="fas fa-edit"></i></td>
-                  </tr>
-                  <tr>
-                    <td>002</td>
-                    <td>Global Solutions Inc.</td>
-                    <td>info@globalsolutions.com</td>
-                    <td>+44 987 654 321</td>
-                    <td>45 High Street, London, UK</td>
-                    <td>Jane Smith</td>
-                    <td>janesmith@globalsolutions.com</td>
-                    <td>+44 987 654 322</td>
-                    <td>HR Director</td>
-                    <td>Female</td>
-                    <td>Active</td>
-                    <td><i class="fas fa-edit"></i></td>
-
-                  </tr>
-                  <tr>
-                    <td>003</td>
-                    <td>GreenTech Enterprises</td>
-                    <td>support@greentech.com</td>
-                    <td>+33 1 23 45 67 89</td>
-                    <td>789 Green Road, Paris, France</td>
-                    <td>Mark Johnson</td>
-                    <td>markjohnson@greentech.com</td>
-                    <td>+33 1 23 45 67 90</td>
-                    <td>Chief Technology Officer</td>
-                    <td>Male</td>
-                    <td>Inactive</td>
-                    <td><i class="fas fa-edit"></i></td>
-
-                  </tr>
-                  <tr>
-                    <td>004</td>
-                    <td>BrightFuture Solutions</td>
-                    <td>contact@brightfuture.com</td>
-                    <td>+1 555 123 4567</td>
-                    <td>101 Innovation Park, New York, NY</td>
-                    <td>Emily Davis</td>
-                    <td>emilydavis@brightfuture.com</td>
-                    <td>+1 555 123 4568</td>
-                    <td>Marketing Manager</td>
-                    <td>Female</td>
-                    <td>Active</td>
-                    <td><i class="fas fa-edit"></i></td>
-
-                  </tr>
-                  <tr>
-                    <td>005</td>
-                    <td>NextGen Systems</td>
-                    <td>contact@nextgensystems.com</td>
-                    <td>+1 800 234 5678</td>
-                    <td>450 Tech Blvd, Los Angeles, CA</td>
-                    <td>David Lee</td>
-                    <td>davidlee@nextgensystems.com</td>
-                    <td>+1 800 234 5679</td>
-                    <td>Software Engineer</td>
-                    <td>Male</td>
-                    <td>Active</td>
-                    <td style="cursor:pointer;"><a href=""><i class="fas fa-edit"></i></a></td>
-
-                  </tr>
-                  
-              </thead>
-           
-            </table>
-          </div>
+      
 
       </main>
     </div>
@@ -328,6 +245,7 @@
           if (submenu.id !== id) {
             submenu.style.display = "none";
           }
+          
         });
         var submenu = document.getElementById(id);
         if (submenu.style.display === "block") {
