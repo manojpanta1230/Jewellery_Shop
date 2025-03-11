@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="dashboard.css" />
 
-    <title>Vendor Details </title>
+    <title>Dashboard</title>
   </head>
 
   <body>
@@ -65,7 +65,7 @@
           
       <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Vendors</a>
       <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Users</a>
-      <a href="#" class="menu-item "><i class="fas fa-tasks"></i> Customers</a>
+      <a href="" class="menu-item "><i class="fas fa-tasks"></i> Customers</a>
       <a href="#" class="menu-item"><i class="fas fa-tasks"></i> Products</a>
       <div class="dropdown-item">
         <a href="#" class="menu-item dropdown-toggle" onclick="toggleSubMenu('settings-submenu')">
@@ -119,8 +119,8 @@
               <i class="fas fa-cog"></i> Settings <i class="fas fa-plus"></i>
             </a>
             <div id="settings-submenu" class="sub-menu">
-              <a href="#">Category</a>
-              <a href="#">Sub Category</a>
+              <a href="Category.html">Category</a>
+              <a href="">Sub Category</a>
               <a href="#">Unit</a>
               <a href="#">User Role</a>
             </div>
@@ -166,156 +166,23 @@
             </div>
           </div>
         </div>
-        <!-- <div class="container">
-          <div class="card balance-card">
-            <i class="fas fa-bell"></i>
-            <h2>Revenue</h2>
-
-            <p class="value">$23,540.00</p>
-          </div>
-          <div class="card balance-card">
-            <i class="fas fa-bell"></i>
-            <h2>Orders</h2>
-
-            <p class="value">20</p>
-          </div>
-          <div class="card balance-card">
-            <i class="fa-solid fa-vault"></i>
-            <h2>Room Available</h2>
-
-            <p class="value">100</p>
-          </div>
-          <div class="card balance-card">
-            <i class="fas fa-tasks"></i>
-            <h2>Bookings</h2>
-
-            <p class="value">50</p>
-          </div>
-        </div> -->
-          <div class="button-container">
-            <button class="dashboard-button">
-              <i class="fas fa-ticket-alt"></i>
-              <!-- Font Awesome Ticket Icon -->
-              <span>New Booking</span>
-            </button>
-
-            <button class="dashboard-button">
-              <i class="fas fa-list-alt"></i>
-              <!-- Font Awesome List Icon -->
-              <span>Room Food Order</span>
-            </button>
-
-            <button class="dashboard-button">
-              <i class="fas fa-utensils"></i>
-              <!-- Font Awesome Utensils Icon -->
-              <span>Restaurant Order</span>
-            </button>
-          </div>
-          <div class="table-container" >
-            <table class="order-table" >
+   
+         
+          <div class="table-container">
+            <table class="order-table">
               <thead>
                 <tr>
                   <th>Code</th>
-                  <th>Company Name</th>
-                  <th>Company Email</th>
-                  <th>Company Contact</th>
-                  <th>Company Address</th>
-                  <th>Staff Name</th>
-                  <th>Staff Email</th>
-                  <th>Staff Contact</th>
-                  <th>Designation</th>
-                  <th>Gender</th>
-                  <th>Status</th>
-                  <th> Edit</th>
-                </tr>
+                  <th>Category Title</th>
+                  <th>Title</th>
                
-                <tr>
-                    <td>001</td>
-                    <td>Tech Innovations Ltd.</td>
-                    <td>contact@techinnovations.com</td>
-                    <td>+1 234 567 890</td>
-                    <td>123 Silicon Valley, Suite 200, San Francisco, CA</td>
-                    <td>John Doe</td>
-                    <td>johndoe@techinnovations.com</td>
-                    <td>+1 234 567 891</td>
-                    <td>Project Manager</td>
-                    <td>Male</td>
-                    <td>Active</td>
-                    <td >  
-                     <p >
-                      <span><a href="EditDetails.html"><i class="fas fa-edit"></i></a></span>
-                      <span><a href="EditDetails.html"><i class="fas fa-edit"></i></a></span>
-
-                      <span><a href="EditDetails.html"><i class="fas fa-edit"></i></a></span>
-
-                     </p>
-                        
-                     
-                   
-                      
-                      </td> 
-                  </tr>
-                  <tr>
-                    <td>002</td>
-                    <td>Global Solutions Inc.</td>
-                    <td>info@globalsolutions.com</td>
-                    <td>+44 987 654 321</td>
-                    <td>45 High Street, London, UK</td>
-                    <td>Jane Smith</td>
-                    <td>janesmith@globalsolutions.com</td>
-                    <td>+44 987 654 322</td>
-                    <td>HR Director</td>
-                    <td>Female</td>
-                    <td>Active</td>
-                    <td >  
-                     
-                      <p >
-                        <span><a href="EditDetails.html"><i class="fas fa-edit"></i></a></span>
-                        <span><a href="EditDetails.html"><i class="fas fa-edit"></i></a></span>
-  
-                        <span><a href="EditDetails.html"><i class="fas fa-edit"></i></a></span>
-  
-                       </p>
-
-                    </td> 
-                  </tr>
-                 
-            
-                  <tr>
-                    <td>005</td>
-                    <td>NextGen Systems</td>
-                    <td>contact@nextgensystems.com</td>
-                    <td>+1 800 234 5678</td>
-                    <td>450 Tech Blvd, Los Angeles, CA</td>
-                    <td>David Lee</td>
-                    <td>davidlee@nextgensystems.com</td>
-                    <td>+1 800 234 5679</td>
-                    <td>Software Engineer</td>
-                    <td>Male</td>
-                    <td>Active</td>
-                    <td>  
-                     
-                      <p >
-                        <span><a href="EditDetails.html"><i class="fas fa-edit"></i></a></span>
-                        <span><a href="EditDetails.html"><i class="fas fa-edit"></i></a></span>
-  
-                        <span><a href="EditDetails.html"><i class="fas fa-cancel"></i></a></span>
-  
-                       </p>
-                    </td> 
-
-                  </tr>
-                  
+                </tr>
               </thead>
-           
             </table>
           </div>
 
       </main>
     </div>
-  <div class=" model">
-    
-  </div>
     <script>
       function hideSideNavBar() {
         let x = document.getElementById("hidden");
@@ -333,6 +200,7 @@
           if (submenu.id !== id) {
             submenu.style.display = "none";
           }
+          
         });
         var submenu = document.getElementById(id);
         if (submenu.style.display === "block") {
