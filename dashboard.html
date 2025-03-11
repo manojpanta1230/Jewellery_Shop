@@ -36,6 +36,62 @@
           <a href="#" class="menu-item active"
             ><i class="fas fa-home"></i> Home</a
           >
+          <div class="dropdown-item">
+            <a
+              href="#"
+              class="menu-item dropdown-toggle"
+              onclick="toggleSubMenu('billing-submenu')"
+            >
+              <i class="fas fa-file-invoice-dollar"></i> Billing
+              <i class="fas fa-plus"></i>
+            </a>
+            <div id="billing-submenu" class="sub-menu">
+              <a href="#">Sales</a>
+              <a href="#">Purchases</a>
+              <a href="#">Orders</a>
+              <a href="#">Revenue</a>
+            </div>
+          </div>
+
+          <a href="vendorDetails.html" class="menu-item"><i class="fas fa-tasks"></i> Vendors</a>
+          <a href="UsersDetails.html" class="menu-item"><i class="fas fa-tasks"></i> Users</a>
+          <a href="customerdetails.html" class="menu-item"
+            ><i class="fas fa-tasks"></i> Customers</a
+          >
+          <a href="productDetails.html" class="menu-item"
+            ><i class="fas fa-tasks"></i> Products</a
+          >
+
+          <div class="dropdown-item">
+            <a
+              href="#"
+              class="menu-item dropdown-toggle"
+              onclick="toggleSubMenu('settings-submenu')"
+            >
+              <i class="fas fa-cog"></i> Settings <i class="fas fa-plus"></i>
+            </a>
+            <div id="settings-submenu" class="sub-menu">
+              <a href="Category.html">Category</a>
+              <a href="">Sub Category</a>
+              <a href="#">Unit</a>
+              <a href="#">User Role</a>
+            </div>
+          </div>
+
+          <div class="dropdown-item">
+            <a
+              href="#"
+              class="menu-item dropdown-toggle"
+              onclick="toggleSubMenu('finance-submenu')"
+            >
+              <i class="fas fa-money-bill-wave"></i> Finance
+              <i class="fas fa-plus"></i>
+            </a>
+            <div id="finance-submenu" class="sub-menu">
+              <a href="#">Inventory</a>
+              <a href="#">Items</a>
+            </div>
+          </div>
           <!-- <div class="dropdown-item">
             <a href="#" class="menu-item dropdown-toggle" onclick="toggleSubMenu('billing-submenu')">
                 <i class="fas fa-file-invoice-dollar"></i> Billing <i class="fas fa-plus"></i>
